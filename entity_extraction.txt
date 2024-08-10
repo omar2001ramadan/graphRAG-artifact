@@ -1,0 +1,186 @@
+-Goal-
+Given a text document that is potentially relevant to this activity, identify all digital evidence entities and their relationships, focusing on forensic artifacts.
+
+-Steps-
+1. Identify all digital evidence entities. Digital evidence can encompass a wide range of data types and sources, including but not limited to:
+
+1. Personal Identifiers: Name, Address, Phone number, Email address, Social Security number, Date of birth
+2. Network Information: IP address, MAC address, Browser fingerprint, Login credentials, VPN usage data
+3. Communication Records: Emails, Text messages, Instant messaging logs, Voice calls and voicemails, Social media messages and posts
+4. Financial Data: Bank account information, Credit card numbers, Transaction history, Cryptocurrency wallet addresses
+5. Location Data: GPS coordinates, Cell tower triangulation data, Check-ins on social media, Geotags on photos
+6. Device Information: Device type and model, Operating system and version, Installed applications, System logs
+7. File System Data: Documents, Images, Videos, Audio files, Deleted files (recoverable), File metadata (creation date, modification date, etc.)
+8. Internet Activity: Browsing history, Search queries, Cached web pages, Cookies, Download history
+9. Cloud Data: Files stored in cloud services, Backup data, Synced information across devices
+10. Miscellaneous: Calendar entries, Contact lists, Notes and memos, Passwords and encryption keys, Software license information
+
+For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: One of the types listed above
+- entity_description: Comprehensive description of the entity's attributes and activities
+- entity_value: The actual value of the evidence (if present in the text)
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>{tuple_delimiter}<entity_value>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are clearly related to each other. Common types of relationships between digital evidence include:
+
+1. Communication Relationships: e.g., [Phone number A, calls, Phone number B]
+2. Ownership/Association: e.g., [Person, owns, Device]
+3. Temporal Relationships: e.g., [File A, created before, File B]
+4. Spatial Relationships: e.g., [Device, located at, GPS coordinates]
+5. Causal Relationships: e.g., [Malware installation, causes, Data breach]
+6. Data Flow: e.g., [File, transferred from, Device A, to, Device B]
+7. Access Relationships: e.g., [User, accesses, File]
+8. Modification Relationships: e.g., [User, edits, Document]
+9. Financial Transactions: e.g., [Account A, transfers funds to, Account B]
+10. Social Connections: e.g., [User A, friends with, User B] on a social network
+11. Software Interactions: e.g., [Application, generates, Log file]
+12. Content Relationships: e.g., [Document A, contains similar text to, Document B]
+
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_type: One of the relationship types listed above
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity (1-10, where 10 is the strongest)
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_type>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. When finished, output {completion_delimiter}
+
+######################
+-Examples-
+######################
+Example 1:
+Entity_types: [organization, person]
+Text:
+According to an article on 2022/01/10, Company A was fined for bid rigging while participating in multiple public tenders published by Government Agency B. The company is owned by Person C who was suspected of engaging in corruption activities in 2015.
+################
+Output:
+(COMPANY A{tuple_delimiter}GOVERNMENT AGENCY B{tuple_delimiter}ANTI-COMPETITIVE PRACTICES{tuple_delimiter}TRUE{tuple_delimiter}2022-01-10T00:00:00{tuple_delimiter}2022-01-10T00:00:00{tuple_delimiter}Company A was found to engage in anti-competitive practices because it was fined for bid rigging in multiple public tenders published by Government Agency B according to an article published on 2022/01/10{tuple_delimiter}According to an article published on 2022/01/10, Company A was fined for bid rigging while participating in multiple public tenders published by Government Agency B.){completion_delimiter}
+#############################
+Example 2:
+Entity_types: [organization, person]
+Text:
+According to an article on 2022/01/10, Company A was fined for bid rigging while participating in multiple public tenders published by Government Agency B. The company is owned by Person C who was suspected of engaging in corruption activities in 2015.
+################
+Output:
+(COMPANY A{tuple_delimiter}GOVERNMENT AGENCY B{tuple_delimiter}ANTI-COMPETITIVE PRACTICES{tuple_delimiter}TRUE{tuple_delimiter}2022-01-10T00:00:00{tuple_delimiter}2022-01-10T00:00:00{tuple_delimiter}Company A was found to engage in anti-competitive practices because it was fined for bid rigging in multiple public tenders published by Government Agency B according to an article published on 2022/01/10{tuple_delimiter}According to an article published on 2022/01/10, Company A was fined for bid rigging while participating in multiple public tenders published by Government Agency B.){record_delimiter}
+(PERSON C{tuple_delimiter}NONE{tuple_delimiter}CORRUPTION{tuple_delimiter}SUSPECTED{tuple_delimiter}2015-01-01T00:00:00{tuple_delimiter}2015-12-30T00:00:00{tuple_delimiter}Person C was suspected of engaging in corruption activities in 2015{tuple_delimiter}The company is owned by Person C who was suspected of engaging in corruption activities in 2015){completion_delimiter}
+#############################
+Example 3:
+Entity_types: [threat-actor, identity]
+Text:
+In this scenario, a threat actor group named "Disco Team" is modeled using STIX Threat Actor and Identity objects. Disco Team operates primarily in Spanish and they have been known to steal credit card information for financial gain. They use the e-mail alias "disco-team@stealthemail.com" publicly and are known alternatively as "Equipo del Discoteca".
+################
+Output:
+("entity"{tuple_delimiter}DISCO TEAM THREAT ACTOR GROUP{tuple_delimiter}THREAT ACTOR{tuple_delimiter}This organized threat actor group operates to create profit from all types of crime. They are known to steal credit card information and operate primarily in Spanish.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}DISCO TEAM{tuple_delimiter}IDENTITY{tuple_delimiter}Disco Team is the name of an organized threat actor crime-syndicate.{tuple_delimiter}disco-team@stealthemail.com){record_delimiter}
+("relationship"{tuple_delimiter}DISCO TEAM THREAT ACTOR GROUP{tuple_delimiter}DISCO TEAM{tuple_delimiter}ATTRIBUTION{tuple_delimiter}The threat actor group is attributed to the Disco Team identity{tuple_delimiter}9){completion_delimiter}
+#############################
+Example 4:
+Entity_types: [threat-actor, identity, campaign]
+Text:
+This scenario represents an advanced persistent threat (APT) intrusion set that is suspected to be funded by the country "Franistan". Their target is the Branistan People's Party (BPP), one of the political parties of the country "Branistan". This intrusion set consists of a couple of sophisticated campaigns and attack patterns against the BPP's website. One campaign seeks to insert false information into the BPP's web pages, while another is a DDoS effort against the BPP web servers.
+################
+Output:
+("entity"{tuple_delimiter}FAKE BPP (BRANISTAN PEOPLES PARTY){tuple_delimiter}THREAT ACTOR{tuple_delimiter}A nation-state threat actor that aims to influence the election in Branistan through sophisticated cyber attacks.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}FRANISTAN INTELLIGENCE{tuple_delimiter}IDENTITY{tuple_delimiter}The suspected funding source for the APT intrusion set.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}BRANISTAN PEOPLES PARTY{tuple_delimiter}IDENTITY{tuple_delimiter}The target of the APT intrusion set, a political party in Branistan.{tuple_delimiter}http://www.bpp.bn){record_delimiter}
+("entity"{tuple_delimiter}OPERATION BRAN FLAKES{tuple_delimiter}CAMPAIGN{tuple_delimiter}A campaign to insert false information into the BPP's web pages.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}OPERATION RAISIN BRAN{tuple_delimiter}CAMPAIGN{tuple_delimiter}A DDoS campaign to flood BPP web servers.{tuple_delimiter}N/A){record_delimiter}
+("relationship"{tuple_delimiter}FAKE BPP (BRANISTAN PEOPLES PARTY){tuple_delimiter}BRANISTAN PEOPLES PARTY{tuple_delimiter}TARGETS{tuple_delimiter}The threat actor targets the Branistan Peoples Party{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}FAKE BPP (BRANISTAN PEOPLES PARTY){tuple_delimiter}OPERATION BRAN FLAKES{tuple_delimiter}USES{tuple_delimiter}The threat actor uses this campaign to insert false information{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}FAKE BPP (BRANISTAN PEOPLES PARTY){tuple_delimiter}OPERATION RAISIN BRAN{tuple_delimiter}USES{tuple_delimiter}The threat actor uses this campaign for DDoS attacks{tuple_delimiter}9){completion_delimiter}
+#############################
+Example 5:
+Entity_types: [indicator, malware]
+Text:
+This scenario consists of an indicator for the URL http://x4z9arb.cn/4712/, which is known to be malicious, and a backdoor piece of malware associated with the URL. The site has been shown to host this backdoor malware, and the malware has been known to download remote files.
+################
+Output:
+("entity"{tuple_delimiter}MALICIOUS SITE HOSTING DOWNLOADER{tuple_delimiter}INDICATOR{tuple_delimiter}This URL is known to be malicious and hosts a backdoor malware.{tuple_delimiter}http://x4z9arb.cn/4712/){record_delimiter}
+("entity"{tuple_delimiter}X4Z9ARB BACKDOOR{tuple_delimiter}MALWARE{tuple_delimiter}This malware attempts to download remote files after establishing a foothold as a backdoor.{tuple_delimiter}N/A){record_delimiter}
+("relationship"{tuple_delimiter}MALICIOUS SITE HOSTING DOWNLOADER{tuple_delimiter}X4Z9ARB BACKDOOR{tuple_delimiter}INDICATES{tuple_delimiter}The malicious URL indicates the presence of the backdoor malware{tuple_delimiter}9){completion_delimiter}
+#############################
+Example 6:
+Entity_types: [indicator, malware]
+Text:
+This scenario consists of the description of a simple indicator that represents a pattern for a file with a given hash and the context that if a file with that hash is seen it might indicate a sample of Poison Ivy is present.
+################
+Output:
+("entity"{tuple_delimiter}FILE HASH FOR POISON IVY VARIANT{tuple_delimiter}INDICATOR{tuple_delimiter}This file hash indicates that a sample of Poison Ivy is present.{tuple_delimiter}ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c){record_delimiter}
+("entity"{tuple_delimiter}POISON IVY{tuple_delimiter}MALWARE{tuple_delimiter}A remote access trojan malware.{tuple_delimiter}N/A){record_delimiter}
+("relationship"{tuple_delimiter}FILE HASH FOR POISON IVY VARIANT{tuple_delimiter}POISON IVY{tuple_delimiter}INDICATES{tuple_delimiter}The file hash indicates the presence of the Poison Ivy malware{tuple_delimiter}8){completion_delimiter}
+#############################
+Example 7:
+Entity_types: [indicator, identity]
+Text:
+This scenario consists of two cyber threat companies, Alpha and Beta, who share threat intelligence. A malicious URL was seen on Alpha's network and an indicator was generated to capture this information. Alpha then shares this information with company Beta who later sees this indicator on their systems. Beta then creates a sighting of this indicator to share that this indicator has been spotted.
+################
+Output:
+("entity"{tuple_delimiter}MALICIOUS URL{tuple_delimiter}INDICATOR{tuple_delimiter}This URL is potentially associated with malicious activity and is listed on several blacklist sites.{tuple_delimiter}http://paypa1.banking.com){record_delimiter}
+("entity"{tuple_delimiter}ALPHA THREAT ANALYSIS ORG.{tuple_delimiter}IDENTITY{tuple_delimiter}A cyber security organization in the technology sector.{tuple_delimiter}info@alpha.org){record_delimiter}
+("entity"{tuple_delimiter}BETA CYBER INTELLIGENCE COMPANY{tuple_delimiter}IDENTITY{tuple_delimiter}A cyber security organization in the technology sector.{tuple_delimiter}info@beta.com){record_delimiter}
+("relationship"{tuple_delimiter}BETA CYBER INTELLIGENCE COMPANY{tuple_delimiter}MALICIOUS URL{tuple_delimiter}SIGHTING{tuple_delimiter}Beta Cyber Intelligence Company observed the malicious URL indicator on their systems{tuple_delimiter}7{completion_delimiter}
+#############################
+Example 8:
+Entity_types: [identity, malware, file]
+Text:
+This scenario consists of two cyber threat companies, Pym and Oscorp, who share threat intelligence with one another. Pym Technologies originally shared a Malware STIX Domain Object (SDO) with Oscorp. Oscorp later believes they have spotted this Malware object on their own network based upon some captured observed data which contains hashes that match the malware as well as registry keys that the malware created. To represent this, Oscorp issues a Sighting STIX Relationship Object (SRO) that holds references to these observed data and relays that this could be a sighting-of this particular malware.
+################
+Output:
+("entity"{tuple_delimiter}PYM TECHNOLOGIES{tuple_delimiter}IDENTITY{tuple_delimiter}A technology sector organization that shares threat intelligence.{tuple_delimiter}hank@pymtech.com){record_delimiter}
+("entity"{tuple_delimiter}OSCORP INDUSTRIES{tuple_delimiter}IDENTITY{tuple_delimiter}A technology sector organization that shares threat intelligence.{tuple_delimiter}norman@oscorp.com){record_delimiter}
+("entity"{tuple_delimiter}ONLINE JOB SITE TROJAN{tuple_delimiter}MALWARE{tuple_delimiter}Trojan that is disguised as the executable file resume.pdf., it also creates a registry key.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}RESUME.PDF{tuple_delimiter}FILE{tuple_delimiter}A file suspected to be the Online Job Site Trojan malware.{tuple_delimiter}MD5: 1717b7fff97d37a1e1a0029d83492de1, SHA-1: c79a326f8411e9488bdc3779753e1e3489aaedea{record_delimiter}
+("relationship"{tuple_delimiter}OSCORP INDUSTRIES{tuple_delimiter}ONLINE JOB SITE TROJAN{tuple_delimiter}SIGHTING{tuple_delimiter}Oscorp Industries observed indicators of the Online Job Site Trojan on their network{tuple_delimiter}8{completion_delimiter}
+#############################
+Example 9:
+Entity_types: [threat-actor, malware, attack-pattern]
+Text:
+This scenario represents a threat actor known as "Adversary Bravo". Adversary Bravo is known to use phishing attacks to deliver remote access malware to the targets. The malware variety they typically use is a variant on the Poison Ivy malware.
+################
+Output:
+("entity"{tuple_delimiter}ADVERSARY BRAVO{tuple_delimiter}THREAT ACTOR{tuple_delimiter}A threat actor known to use phishing attacks to deliver remote access malware.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}POISON IVY VARIANT D1C6{tuple_delimiter}MALWARE{tuple_delimiter}A variant of the Poison Ivy remote access trojan used by Adversary Bravo.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}PHISHING{tuple_delimiter}ATTACK PATTERN{tuple_delimiter}Spear phishing used as a delivery mechanism for malware.{tuple_delimiter}N/A){record_delimiter}
+("relationship"{tuple_delimiter}ADVERSARY BRAVO{tuple_delimiter}POISON IVY VARIANT D1C6{tuple_delimiter}USES{tuple_delimiter}Adversary Bravo uses this malware variant in their attacks{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}ADVERSARY BRAVO{tuple_delimiter}PHISHING{tuple_delimiter}USES{tuple_delimiter}Adversary Bravo uses phishing attacks to deliver malware{tuple_delimiter}10){completion_delimiter}
+#############################
+Example 10:
+Entity_types: [identity, indicator, marking-definition]
+Text:
+This scenario focuses on a STIX producer, "Stark Industries", who imposes object markings on an indicator object. Before sharing this indicator, Stark creates a "Statement" marking definition and selects a "Traffic Light Protocol" (TLP) marking definition to apply to the indicator. These marking definitions incorporate copyright information and restrict the usage of the indicator based on its TLP marking type.
+################
+Output:
+("entity"{tuple_delimiter}STARK INDUSTRIES{tuple_delimiter}IDENTITY{tuple_delimiter}A defense sector organization that produces STIX objects.{tuple_delimiter}info@stark.com){record_delimiter}
+("entity"{tuple_delimiter}KNOWN MALICIOUS IP ADDRESS{tuple_delimiter}INDICATOR{tuple_delimiter}Detected malicious activity from this address.{tuple_delimiter}10.0.0.0){record_delimiter}
+("entity"{tuple_delimiter}TLP:AMBER{tuple_delimiter}MARKING DEFINITION{tuple_delimiter}Traffic Light Protocol marking for restricted sharing.{tuple_delimiter}N/A){record_delimiter}
+("entity"{tuple_delimiter}COPYRIGHT STATEMENT{tuple_delimiter}MARKING DEFINITION{tuple_delimiter}Copyright statement for Stark Industries.{tuple_delimiter}Copyright (c) Stark Industries 2017.){record_delimiter}
+("relationship"{tuple_delimiter}STARK INDUSTRIES{tuple_delimiter}KNOWN MALICIOUS IP ADDRESS{tuple_delimiter}CREATED{tuple_delimiter}Stark Industries created this indicator{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}KNOWN MALICIOUS IP ADDRESS{tuple_delimiter}TLP:AMBER{tuple_delimiter}MARKED WITH{tuple_delimiter}The indicator is marked with TLP:AMBER restrictions{tuple_delimiter}7){record_delimiter}
+("relationship"{tuple_delimiter}KNOWN MALICIOUS IP ADDRESS{tuple_delimiter}COPYRIGHT STATEMENT{tuple_delimiter}MARKED WITH{tuple_delimiter}The indicator is marked with copyright information{tuple_delimiter}6){completion_delimiter}
+#############################
+Example 11:
+Entity_types: [identity, indicator, threat-actor]
+Text:
+This scenario focuses on a STIX producer, "Gotham National Bank", who imposes granular markings on an Indicator object. Before sharing this indicator, Gotham selects a few "Traffic Light Protocol" (TLP) marking definitions to apply to the indicator. These marking definitions help restrict the usage of certain properties of the indicator based on its TLP marking type.
+################
+Output:
+("entity"{tuple_delimiter}GOTHAM NATIONAL BANK{tuple_delimiter}IDENTITY{tuple_delimiter}A financial services organization that produces STIX objects.{tuple_delimiter}contact@gothamnational.com){record_delimiter}
+("entity"{tuple_delimiter}FAKE EMAIL ADDRESS{tuple_delimiter}INDICATOR{tuple_delimiter}An email address pattern known to be used by The Joker for malicious activities.{tuple_delimiter}.+\banking@g0thamnatl\.com$){record_delimiter}
+("entity"{tuple_delimiter}THE JOKER{tuple_delimiter}THREAT ACTOR{tuple_delimiter}A criminal threat actor known for targeting Gotham National Bank.{tuple_delimiter}N/A){record_delimiter}
+("relationship"{tuple_delimiter}GOTHAM NATIONAL BANK{tuple_delimiter}FAKE EMAIL ADDRESS{tuple_delimiter}CREATED{tuple_delimiter}Gotham National Bank created this indicator{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}FAKE EMAIL ADDRESS{tuple_delimiter}THE JOKER{tuple_delimiter}INDICATES{tuple_delimiter}The fake email address indicates activity by The Joker{tuple_delimiter}9){completion_delimiter}
+#############################
+
+
+
+
+-Real Data-
+Entity_types: {entity_types}
+Text: {input_text}
+
+Output:

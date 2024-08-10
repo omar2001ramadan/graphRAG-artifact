@@ -1,0 +1,56 @@
+Setting up GraphRAG and Creating a Graph Visualization
+
+1. Set up the environment:
+   Create and activate a Conda environment:
+   conda create -n graphRAG python=3.12.4 -y
+   conda activate graphRAG
+
+   Install (my) required dependencies:
+   pip install json_repair
+   pip install --upgrade tensorflow
+   pip install graphrag
+
+2. Set up the OpenAI API key:
+   $env:OPENAI_API_KEY="your_api_key_here"
+
+3. Prepare the input data:
+   Create the input directory:
+   New-Item -ItemType Directory -Path .\ragtest\input -Force
+
+   Move your UTF-8 encoded text file into the .\ragtest\input directory
+
+4. Initialize GraphRAG:
+   python -m graphrag.index --init --root ./ragtest
+
+5. Configure GraphRAG:
+   Open the .env file in the ./ragtest directory (mine was under user directory) and insert your OpenAI API Key
+   Edit settings.yaml in ./ragtest:
+   - Change the model on line 7 to "gpt-4o"
+
+6. Run the GraphRAG indexing process (EXECUTION COMMAND):
+   python -m graphrag.index --root ./ragtest
+
+	------RESULTS PRESENT IN OUTPUT DIRECTORY, under artifacts------
+
+7. Create the graph visualization:
+			https://github.com/omar2001ramadan/graphRAG-artifact/blob/main/display_parquet.ipynb
+   Edit the script display_parquet.ipynb with data_dir, which is the artifact directory:
+   python graphrag_network.html
+   Open the generated graphrag_network.html file in a web browser to view the graph
+
+8. Use this global search to ask about overall themes:
+python -m graphrag.query --root ./ragtest --method global --response_type "Multiple Paragraphs" "What are the main themes in A Christmas Carol?"
+
+9. Using local search to ask about a specific character:
+python -m graphrag.query --root ./ragtest --method local --response_type "Single Paragraph" "Describe Ebenezer Scrooge's character development throughout the story."
+
+10. Asking about relationships between characters:
+python -m graphrag.query --root ./ragtest --method local --response_type "List of 3-5 Points" "What is the relationship between Scrooge and his nephew Fred?"
+
+11. Inquiring about symbolic elements in the story:
+python -m graphrag.query --root ./ragtest --method global --response_type "Multiple Paragraphs" "Explain the significance of the three spirits in A Christmas Carol."
+
+12. Asking about the setting:
+python -m graphrag.query --root ./ragtest --method local --response_type "Single Paragraph" "Describe the setting of Victorian London in A Christmas Carol."
+
+
