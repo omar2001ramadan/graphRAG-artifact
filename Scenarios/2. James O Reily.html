@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "white"}, "id": "DETECTIVE JAMES O\u0027REILLY", "label": "DETECTIVE JAMES O\u0027REILLY", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "HACKER", "label": "HACKER", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "SOPHISTICATED MALWARE PROGRAM", "label": "SOPHISTICATED MALWARE PROGRAM", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "IP ADDRESS 10.0.0.5", "label": "IP ADDRESS 10.0.0.5", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "MAC ADDRESS 11:22:33:44:55:66", "label": "MAC ADDRESS 11:22:33:44:55:66", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CRYPTOCURRENCY WALLETS", "label": "CRYPTOCURRENCY WALLETS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "OFFSHORE BANK ACCOUNTS", "label": "OFFSHORE BANK ACCOUNTS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "SERVER IN EASTERN EUROPE", "label": "SERVER IN EASTERN EUROPE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "VPN", "label": "VPN", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "b45241d70f0e43fca764df95b2b81f77", "label": "DETECTIVE JAMES O\u0027REILLY", "shape": "dot", "size": 10, "title": "A detective investigating a cyber theft case involving millions of dollars."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "4119fd06010c494caa07f439b333f4c5", "label": "HACKER", "shape": "dot", "size": 10, "title": "The suspect identified by the email address involved in the cyber theft."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "d3835bf3dda84ead99deadbeac5d0d7d", "label": "IP ADDRESS 10.0.0.5", "shape": "dot", "size": 10, "title": "The IP address associated with the suspect\u0027s activities during the cyber theft."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "077d2820ae1845bcbb1803379a3d1eae", "label": "MAC ADDRESS 11:22:33:44:55:66", "shape": "dot", "size": 10, "title": "The MAC address linked to the suspect\u0027s device during the cyber theft."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3671ea0dd4e84c1a9b02c5ab2c8f4bac", "label": "SOPHISTICATED MALWARE PROGRAM", "shape": "dot", "size": 10, "title": "A malware program used by the suspect to facilitate the cyber theft."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "19a7f254a5d64566ab5cc15472df02de", "label": "CRYPTOCURRENCY WALLETS", "shape": "dot", "size": 10, "title": "Wallets used to transfer stolen funds during the cyber theft."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "e7ffaee9d31d4d3c96e04f911d0a8f9e", "label": "OFFSHORE BANK ACCOUNTS", "shape": "dot", "size": 10, "title": "Bank accounts used to launder the stolen funds."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "f7e11b0e297a44a896dc67928368f600", "label": "SERVER IN EASTERN EUROPE", "shape": "dot", "size": 10, "title": "The server where the stolen funds were tracked to, located in Eastern Europe."}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "1fd3fa8bb5a2408790042ab9573779ee", "label": "VPN", "shape": "dot", "size": 10, "title": "A virtual private network used by the hacker to obscure their activities."}]);
+                  edges = new vis.DataSet([{"from": "DETECTIVE JAMES O\u0027REILLY", "title": "INVESTIGATES", "to": "HACKER", "width": 1}, {"from": "HACKER", "title": "USES", "to": "SOPHISTICATED MALWARE PROGRAM", "width": 1}, {"from": "HACKER", "title": "ASSOCIATED WITH", "to": "IP ADDRESS 10.0.0.5", "width": 1}, {"from": "HACKER", "title": "ASSOCIATED WITH", "to": "MAC ADDRESS 11:22:33:44:55:66", "width": 1}, {"from": "HACKER", "title": "TRANSFERS FUNDS TO", "to": "CRYPTOCURRENCY WALLETS", "width": 1}, {"from": "HACKER", "title": "TRANSFERS FUNDS TO", "to": "OFFSHORE BANK ACCOUNTS", "width": 1}, {"from": "HACKER", "title": "TRACKED TO", "to": "SERVER IN EASTERN EUROPE", "width": 1}, {"from": "HACKER", "title": "USES", "to": "VPN", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
