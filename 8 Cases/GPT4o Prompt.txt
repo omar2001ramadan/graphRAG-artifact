@@ -1,0 +1,55 @@
+give me a list of both entities and relationships using this prompt. For entities, give common titles for entities, like email addresses, name, in the "type" column. In the "name" column, include the entity name. :
+
+-Goal-
+Given a text document that is potentially relevant to this activity, identify all digital evidence entities and their relationships, focusing on forensic artifacts.
+
+-Steps-
+1. Identify all digital evidence entities. Digital evidence can encompass a wide range of data types and sources, including but not limited to:
+
+1. Personal Identifiers: Name, Address, Phone number, Email address, Social Security number, Date of birth
+2. Network Information: IP address, MAC address, Login credentials
+3. Communication Records: Emails, Text messages, Social media messages and posts
+4. Financial Data: Bank account information, Credit card numbers, Transaction ID, Cryptocurrency wallet addresses
+5. Location Data: GPS latitude and longitude
+6. Device Information: Device type and model, Operating system and version, Installed applications, System logs
+7. Internet Activity: Browsing URL, Search queries
+
+For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+Format each entity as ("entity"{tuple_delimiter}<entity_name>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target entity) that are clearly related to each other. Common types of relationships between digital evidence include:
+
+1. Communication Relationships: e.g., [Phone number A, calls, Phone number B]
+2. Ownership/Association: e.g., [Person, owns, Device]
+3. Temporal Relationships: e.g., [File A, created before, File B]
+4. Spatial Relationships: e.g., [Device, located at, GPS coordinates]
+5. Causal Relationships: e.g., [Malware installation, causes, Data breach]
+6. Data Flow: e.g., [File, transferred from, Device A, to, Device B]
+7. Access Relationships: e.g., [User, accesses, File]
+8. Modification Relationships: e.g., [User, edits, Document]
+9. Financial Transactions: e.g., [Account A, transfers funds to, Account B]
+10. Social Connections: e.g., [User A, friends with, User B] on a social network
+11. Software Interactions: e.g., [Application, generates, Log file]
+12. Content Relationships: e.g., [Document A, contains similar text to, Document B]
+
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_type: One of the relationship types listed above
+- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity (1-10, where 10 is the strongest)
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_type>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. When finished, output {completion_delimiter}
+
+-Real Data-
+Entity_types: {entity_types}
+Text: {input_text}
+
+Output:
+
+
+
+This is the input

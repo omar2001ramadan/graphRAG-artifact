@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 700px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "white"}, "id": "JASON GOODMAN", "label": "JASON GOODMAN", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "BOT SENTIEL, INC", "label": "BOT SENTIEL, INC", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CHRISTOPHER ELLIS BOUZY", "label": "CHRISTOPHER ELLIS BOUZY", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "GEORGE WEBB SWEIGERT", "label": "GEORGE WEBB SWEIGERT", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "DEFAMATION CASE", "label": "DEFAMATION CASE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CONSPIRACY TO DEFAME", "label": "CONSPIRACY TO DEFAME", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "LIBEL", "label": "LIBEL", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "TORTIOUS INTERFERENCE", "label": "TORTIOUS INTERFERENCE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "JURY TRIAL", "label": "JURY TRIAL", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "NEW YORK", "label": "NEW YORK", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "MULTIMEDIA SYSTEM DESIGN, INC", "label": "MULTIMEDIA SYSTEM DESIGN, INC", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CROWDSOURCE THE TRUTH", "label": "CROWDSOURCE THE TRUTH", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "PLAINTIFF", "label": "PLAINTIFF", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "FALSE ACCUSATIONS", "label": "FALSE ACCUSATIONS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "DEFAMATION PER SE", "label": "DEFAMATION PER SE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "HARMING PLAINTIFF", "label": "HARMING PLAINTIFF", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "PROCESS ABUSE", "label": "PROCESS ABUSE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "MISCONDUCT BY ATTORNEYS", "label": "MISCONDUCT BY ATTORNEYS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "FALSE STATEMENTS", "label": "FALSE STATEMENTS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CONSPIRACY", "label": "CONSPIRACY", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "BUSINESS REPUTATION", "label": "BUSINESS REPUTATION", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "PUBLICLY POSTED", "label": "PUBLICLY POSTED", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "THIRD PARTIES", "label": "THIRD PARTIES", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "WIDELY PUBLICIZED", "label": "WIDELY PUBLICIZED", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "INTENT TO DAMAGE", "label": "INTENT TO DAMAGE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "ADDRESS", "label": "ADDRESS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "PHONE NUMBER", "label": "PHONE NUMBER", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "EMAIL ADDRESS", "label": "EMAIL ADDRESS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "DATE", "label": "DATE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "DAMAGES", "label": "DAMAGES", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CHRISTOPHER BOUZY", "label": "CHRISTOPHER BOUZY", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "PHONE CALL", "label": "PHONE CALL", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "TWITTER", "label": "TWITTER", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CONVERSATION", "label": "CONVERSATION", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "BOT SENTINEL, INC", "label": "BOT SENTINEL, INC", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "DEFENDANT", "label": "DEFENDANT", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "LIBELOUS STATEMENTS", "label": "LIBELOUS STATEMENTS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "CITY", "label": "CITY", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "STATE", "label": "STATE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "ZIP", "label": "ZIP", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "ECONOMIC LOSSES", "label": "ECONOMIC LOSSES", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "COMPENSATORY DAMAGES", "label": "COMPENSATORY DAMAGES", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "PUNITIVE DAMAGES", "label": "PUNITIVE DAMAGES", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "INTEREST", "label": "INTEREST", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "TWITTER POST", "label": "TWITTER POST", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "TWEET", "label": "TWEET", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "BITCHUTE", "label": "BITCHUTE", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "TWITTER, INC.", "label": "TWITTER, INC.", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "HOME", "label": "HOME", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "12/19/21", "label": "12/19/21", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "12/20/20", "label": "12/20/20", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "8:47 PM", "label": "8:47 PM", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "TROLLBOTS", "label": "TROLLBOTS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "UNTRUSTWORTHY TWITTER ACCOUNTS", "label": "UNTRUSTWORTHY TWITTER ACCOUNTS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "MACHINE LEARNING", "label": "MACHINE LEARNING", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "ONLINE PLATFORM", "label": "ONLINE PLATFORM", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "AI", "label": "AI", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "TRACKING", "label": "TRACKING", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "DETECTING", "label": "DETECTING", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "RAPE ALLEGATIONS", "label": "RAPE ALLEGATIONS", "shape": "dot", "size": 10}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "b45241d70f0e43fca764df95b2b81f77", "label": "JASON GOODMAN", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "4119fd06010c494caa07f439b333f4c5", "label": "BOT SENTIEL, INC", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "d3835bf3dda84ead99deadbeac5d0d7d", "label": "CHRISTOPHER ELLIS BOUZY", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "077d2820ae1845bcbb1803379a3d1eae", "label": "GEORGE WEBB SWEIGERT", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3671ea0dd4e84c1a9b02c5ab2c8f4bac", "label": "DEFAMATION CASE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "19a7f254a5d64566ab5cc15472df02de", "label": "CONSPIRACY TO DEFAME", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "e7ffaee9d31d4d3c96e04f911d0a8f9e", "label": "LIBEL", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "f7e11b0e297a44a896dc67928368f600", "label": "TORTIOUS INTERFERENCE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "1fd3fa8bb5a2408790042ab9573779ee", "label": "JURY TRIAL", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "27f9fbe6ad8c4a8b9acee0d3596ed57c", "label": "NEW YORK", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "e1fd0e904a53409aada44442f23a51cb", "label": "MULTIMEDIA SYSTEM DESIGN, INC", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "de988724cfdf45cebfba3b13c43ceede", "label": "CROWDSOURCE THE TRUTH", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "96aad7cb4b7d40e9b7e13b94a67af206", "label": "BOT SENTINEL, INC", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "c9632a35146940c2a86167c7726d35e9", "label": "TWITTER", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "9646481f66ce4fd2b08c2eddda42fc82", "label": "PLAINTIFF", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "d91a266f766b4737a06b0fda588ba40b", "label": "DEFENDANT", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "bc0e3f075a4c4ebbb7c7b152b65a5625", "label": "FALSE ACCUSATIONS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "254770028d7a4fa9877da4ba0ad5ad21", "label": "DEFAMATION PER SE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "4a67211867e5464ba45126315a122a8a", "label": "HARMING PLAINTIFF", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "04dbbb2283b845baaeac0eaf0c34c9da", "label": "FALSE STATEMENTS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "1943f245ee4243bdbfbd2fd619ae824a", "label": "CONSPIRACY", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "273daeec8cad41e6b3e450447db58ee7", "label": "BUSINESS REPUTATION", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "e69dc259edb944ea9ea41264b9fcfe59", "label": "PUBLICLY POSTED", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "e2f5735c7d714423a2c4f61ca2644626", "label": "THIRD PARTIES", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deece7e64b2a4628850d4bb6e394a9c3", "label": "WIDELY PUBLICIZED", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "e657b5121ff8456b9a610cfaead8e0cb", "label": "INTENT TO DAMAGE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "bf4e255cdac94ccc83a56435a5e4b075", "label": "TROLLBOTS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3b040bcc19f14e04880ae52881a89c1c", "label": "UNTRUSTWORTHY TWITTER ACCOUNTS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3d6b216c14354332b1bf1927ba168986", "label": "MACHINE LEARNING", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "1c109cfdc370463eb6d537e5b7b382fb", "label": "ONLINE PLATFORM", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3d0dcbc8971b415ea18065edc4d8c8ef", "label": "AI", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "68105770b523412388424d984e711917", "label": "TRACKING", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "85c79fd84f5e4f918471c386852204c5", "label": "DETECTING", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "eae4259b19a741ab9f9f6af18c4a0470", "label": "PROCESS ABUSE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3138f39f2bcd43a69e0697cd3b05bc4d", "label": "MISCONDUCT BY ATTORNEYS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "dde131ab575d44dbb55289a6972be18f", "label": "STATEMENTS)(\"RELATIONSHIP\"", "shape": "dot", "size": 10, "title": "PLAINTIFF"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "de9e343f2e334d88a8ac7f8813a915e5", "label": "ADDRESS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "e2bf260115514fb3b252fd879fb3e7be", "label": "CITY", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "b462b94ce47a4b8c8fffa33f7242acec", "label": "STATE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "17ed1d92075643579a712cc6c29e8ddb", "label": "ZIP", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3ce7c210a21b4deebad7cc9308148d86", "label": "PHONE NUMBER", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "d64ed762ea924caa95c8d06f072a9a96", "label": "EMAIL ADDRESS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "adf4ee3fbe9b4d0381044838c4f889c8", "label": "DATE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "32ee140946e5461f9275db664dc541a5", "label": "DAMAGES", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "c160b9cb27d6408ba6ab20214a2f3f81", "label": "ECONOMIC LOSSES", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "23527cd679ff4d5a988d52e7cd056078", "label": "COMPENSATORY DAMAGES", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "f1c6eed066f24cbdb376b910fce29ed4", "label": "PUNITIVE DAMAGES", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "83a6cb03df6b41d8ad6ee5f6fef5f024", "label": "INTEREST", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "147c038aef3e4422acbbc5f7938c4ab8", "label": "TWITTER POST", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "b7702b90c7f24190b864e8c6e64612a5", "label": "CHRISTOPHER BOUZY", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "de6fa24480894518ab3cbcb66f739266", "label": "RAPE ALLEGATIONS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "6fae5ee1a831468aa585a1ea09095998", "label": "LIBELOUS STATEMENTS", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "ef32c4b208d041cc856f6837915dc1b0", "label": "TWEET", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "07b2425216bd4f0aa4e079827cb48ef5", "label": "PHONE CALL", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "2670deebfa3f4d69bb82c28ab250a209", "label": "BITCHUTE", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "404309e89a5241d6bff42c05a45df206", "label": "CONVERSATION", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "b785a9025069417f94950ad231bb1441", "label": "TWITTER, INC.", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "3b6cd96a27304614850709aba1c9598b", "label": "HOME", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "d54956b79dd147f894b67a8b97dcbef0", "label": "12/19/21", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "958beecdb5bb4060948415ffd75d2b03", "label": "12/20/20", "shape": "dot", "size": 10, "title": null}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "b999ed77e19e4f85b7f1ae79af5c002a", "label": "8:47 PM", "shape": "dot", "size": 10, "title": null}]);
+                  edges = new vis.DataSet([{"from": "JASON GOODMAN", "title": "OWNSTARGETSPUBLISHES STATEMENTS ABOUT", "to": "BOT SENTIEL, INC", "width": 1}, {"from": "JASON GOODMAN", "title": "INFLICTSCOMMUNICATES WITHTARGETSPUBLISHES STATEMENTS ABOUT", "to": "CHRISTOPHER ELLIS BOUZY", "width": 1}, {"from": "JASON GOODMAN", "title": "INFLICTSCOMMUNICATES WITHTARGETSPUBLISHES STATEMENTS ABOUT", "to": "GEORGE WEBB SWEIGERT", "width": 1}, {"from": "JASON GOODMAN", "title": "PLAINTIFF INPARTICIPATES IN", "to": "DEFAMATION CASE", "width": 1}, {"from": "JASON GOODMAN", "title": "PARTICIPATES IN", "to": "CONSPIRACY TO DEFAME", "width": 1}, {"from": "JASON GOODMAN", "title": "PARTICIPATES IN", "to": "LIBEL", "width": 1}, {"from": "JASON GOODMAN", "title": "PARTICIPATES IN", "to": "TORTIOUS INTERFERENCE", "width": 1}, {"from": "JASON GOODMAN", "title": "PARTICIPATES IN", "to": "JURY TRIAL", "width": 1}, {"from": "JASON GOODMAN", "title": "RESIDES INLOCATED IN", "to": "NEW YORK", "width": 1}, {"from": "JASON GOODMAN", "title": "owns", "to": "MULTIMEDIA SYSTEM DESIGN, INC", "width": 1}, {"from": "JASON GOODMAN", "title": "creates", "to": "CROWDSOURCE THE TRUTH", "width": 1}, {"from": "JASON GOODMAN", "title": "is", "to": "PLAINTIFF", "width": 1}, {"from": "JASON GOODMAN", "title": "subject toclaims", "to": "FALSE ACCUSATIONS", "width": 1}, {"from": "JASON GOODMAN", "title": "subject toclaims", "to": "DEFAMATION PER SE", "width": 1}, {"from": "JASON GOODMAN", "title": "isclaims", "to": "HARMING PLAINTIFF", "width": 1}, {"from": "JASON GOODMAN", "title": "complains aboutclaims", "to": "PROCESS ABUSE", "width": 1}, {"from": "JASON GOODMAN", "title": "complains aboutclaims", "to": "MISCONDUCT BY ATTORNEYS", "width": 1}, {"from": "JASON GOODMAN", "title": "claims", "to": "FALSE STATEMENTS", "width": 1}, {"from": "JASON GOODMAN", "title": "claims", "to": "CONSPIRACY", "width": 1}, {"from": "JASON GOODMAN", "title": "claims", "to": "BUSINESS REPUTATION", "width": 1}, {"from": "JASON GOODMAN", "title": "claims", "to": "PUBLICLY POSTED", "width": 1}, {"from": "JASON GOODMAN", "title": "claims", "to": "THIRD PARTIES", "width": 1}, {"from": "JASON GOODMAN", "title": "claims", "to": "WIDELY PUBLICIZED", "width": 1}, {"from": "JASON GOODMAN", "title": "claims", "to": "INTENT TO DAMAGE", "width": 1}, {"from": "JASON GOODMAN", "title": "LOCATED AT", "to": "ADDRESS", "width": 1}, {"from": "JASON GOODMAN", "title": "ASSOCIATED WITH", "to": "PHONE NUMBER", "width": 1}, {"from": "JASON GOODMAN", "title": "ASSOCIATED WITH", "to": "EMAIL ADDRESS", "width": 1}, {"from": "JASON GOODMAN", "title": "SIGNED ON", "to": "DATE", "width": 1}, {"from": "JASON GOODMAN", "title": "CLAIMS", "to": "DAMAGES", "width": 1}, {"from": "JASON GOODMAN", "title": "Communication RelationshipsSocial Connections", "to": "CHRISTOPHER BOUZY", "width": 1}, {"from": "JASON GOODMAN", "title": "Communication Relationships", "to": "PHONE CALL", "width": 1}, {"from": "JASON GOODMAN", "title": "Social Connections", "to": "TWITTER", "width": 1}, {"from": "JASON GOODMAN", "title": "Temporal Relationships", "to": "CONVERSATION", "width": 1}, {"from": "BOT SENTIEL, INC", "title": "ASSOCIATED WITH", "to": "CHRISTOPHER ELLIS BOUZY", "width": 1}, {"from": "BOT SENTIEL, INC", "title": "ASSOCIATED WITH", "to": "GEORGE WEBB SWEIGERT", "width": 1}, {"from": "BOT SENTIEL, INC", "title": "DEFENDANT IN", "to": "DEFAMATION CASE", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "DEFENDANT IN", "to": "DEFAMATION CASE", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "COMMUNICATES WITH", "to": "GEORGE WEBB SWEIGERT", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "owns", "to": "BOT SENTINEL, INC", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "is", "to": "DEFENDANT", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "published", "to": "FALSE STATEMENTS", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "involved in", "to": "CONSPIRACY", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "damages", "to": "BUSINESS REPUTATION", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "published", "to": "PUBLICLY POSTED", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "published to", "to": "THIRD PARTIES", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "published", "to": "WIDELY PUBLICIZED", "width": 1}, {"from": "CHRISTOPHER ELLIS BOUZY", "title": "has", "to": "INTENT TO DAMAGE", "width": 1}, {"from": "GEORGE WEBB SWEIGERT", "title": "DEFENDANT IN", "to": "DEFAMATION CASE", "width": 1}, {"from": "GEORGE WEBB SWEIGERT", "title": "is", "to": "DEFENDANT", "width": 1}, {"from": "PLAINTIFF", "title": "RELATED TO", "to": "LIBELOUS STATEMENTS", "width": 1}, {"from": "ADDRESS", "title": "ASSOCIATED WITH", "to": "CITY", "width": 1}, {"from": "ADDRESS", "title": "ASSOCIATED WITH", "to": "STATE", "width": 1}, {"from": "ADDRESS", "title": "ASSOCIATED WITH", "to": "ZIP", "width": 1}, {"from": "DAMAGES", "title": "INCLUDES", "to": "ECONOMIC LOSSES", "width": 1}, {"from": "DAMAGES", "title": "INCLUDES", "to": "COMPENSATORY DAMAGES", "width": 1}, {"from": "DAMAGES", "title": "INCLUDES", "to": "PUNITIVE DAMAGES", "width": 1}, {"from": "DAMAGES", "title": "INCLUDES", "to": "INTEREST", "width": 1}, {"from": "CHRISTOPHER BOUZY", "title": "Social Connections", "to": "TWITTER", "width": 1}, {"from": "CHRISTOPHER BOUZY", "title": "MENTIONS", "to": "TWITTER POST", "width": 1}, {"from": "CHRISTOPHER BOUZY", "title": "Content Relationships", "to": "TWEET", "width": 1}, {"from": "CHRISTOPHER BOUZY", "title": "Communication Relationships", "to": "PHONE CALL", "width": 1}, {"from": "CHRISTOPHER BOUZY", "title": "Data Flow", "to": "BITCHUTE", "width": 1}, {"from": "CHRISTOPHER BOUZY", "title": "Temporal Relationships", "to": "CONVERSATION", "width": 1}, {"from": "TWITTER", "title": "integrated with", "to": "BOT SENTINEL, INC", "width": 1}, {"from": "TWITTER", "title": "Ownership/Association", "to": "TWITTER, INC.", "width": 1}, {"from": "CONVERSATION", "title": "Spatial Relationships", "to": "HOME", "width": 1}, {"from": "CONVERSATION", "title": "Temporal Relationships", "to": "12/19/21", "width": 1}, {"from": "CONVERSATION", "title": "Temporal Relationships", "to": "12/20/20", "width": 1}, {"from": "CONVERSATION", "title": "Temporal Relationships", "to": "8:47 PM", "width": 1}, {"from": "BOT SENTINEL, INC", "title": "detects", "to": "TROLLBOTS", "width": 1}, {"from": "BOT SENTINEL, INC", "title": "detects", "to": "UNTRUSTWORTHY TWITTER ACCOUNTS", "width": 1}, {"from": "BOT SENTINEL, INC", "title": "uses", "to": "MACHINE LEARNING", "width": 1}, {"from": "BOT SENTINEL, INC", "title": "is", "to": "ONLINE PLATFORM", "width": 1}, {"from": "BOT SENTINEL, INC", "title": "uses", "to": "AI", "width": 1}, {"from": "BOT SENTINEL, INC", "title": "involved in", "to": "TRACKING", "width": 1}, {"from": "BOT SENTINEL, INC", "title": "involved in", "to": "DETECTING", "width": 1}, {"from": "TWITTER POST", "title": "DISCUSSES", "to": "RAPE ALLEGATIONS", "width": 1}, {"from": "BITCHUTE", "title": "Ownership/Association", "to": "BITCHUTE", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
