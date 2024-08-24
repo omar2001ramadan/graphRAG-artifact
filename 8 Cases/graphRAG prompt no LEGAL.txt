@@ -1,0 +1,61 @@
+
+Goal:
+Given a text document that is potentially relevant to this activity, identify all digital evidence entities and their relationships, focusing on forensic artifacts. For entities, provide common titles like "email addresses" or "names" in the "type" column. In the "name" column, include the actual entity name. The final output should be a list of both entities and relationships formatted clearly as text.
+
+Step 1: Legal Document De-noising
+
+- Filter out legal boilerplate, procedural text, and standard legal citations that do not contribute to understanding key entities or relationships.
+    - This includes removing introductory phrases such as "IN THE UNITED STATES DISTRICT COURT" or "FOR THE SOUTHERN DISTRICT OF NEW YORK," which do not add value to the understanding of entities and their connections.
+    - Also, exclude standard legal phrases like "JURY TRIAL DEMANDED" or "Plaintiff alleges as follows" unless they are directly tied to key actions or relationships.
+
+- Remove repetitive references to legal codes, statutes, or regulations unless they are directly related to the core narrative.
+    - For example, if the text repeatedly references "28 U.S.C. § 1391(b)," include it only if it’s crucial to understanding the relationship between entities.
+
+- Exclude standard jurisdictional language (e.g., venue details, court jurisdiction statements) unless it directly relates to key entities or actions.
+    - For instance, omit phrases like "This Court has personal jurisdiction over Defendant" unless such statements are essential to establishing a connection between key parties involved.
+
+Step 2: Identify All Digital Evidence Entities
+
+- Identify all digital evidence entities from the de-noised text. Digital evidence can encompass a wide range of data types and sources, including but not limited to:
+    1. Personal Identifiers: Name, Address, Phone number, Email address, Social Security number, Date of birth.
+    2. Network Information: IP address, MAC address, Login credentials.
+    3. Communication Records: Emails, Text messages, Social media messages and posts.
+    4. Financial Data: Bank account information, Credit card numbers, Transaction ID, Cryptocurrency wallet addresses.
+    5. Location Data: GPS latitude and longitude.
+    6. Device Information: Device type and model, Operating system and version, Installed applications, System logs.
+    7. Internet Activity: Browsing URL, Search queries.
+
+- For each identified entity, extract the following information:
+    - entity_name: Name of the entity, capitalized.
+    - Format each entity as ("entity"{tuple_delimiter}<entity_name>).
+
+Step 3: Extract Relationships Between Entities
+
+- From the entities identified in Step 2, identify all pairs of (source_entity, target_entity) that are clearly related to each other. Focus on relationships that are critical to understanding the narrative and reduce focus on ancillary legal jargon.
+
+- Common types of relationships between digital evidence include:
+    1. Communication Relationships: e.g., [Phone number A, calls, Phone number B].
+    2. Ownership/Association: e.g., [Person, owns, Device].
+    3. Temporal Relationships: e.g., [File A, created before, File B].
+    4. Spatial Relationships: e.g., [Device, located at, GPS coordinates].
+    5. Causal Relationships: e.g., [Malware installation, causes, Data breach].
+    6. Data Flow: e.g., [File, transferred from, Device A, to, Device B].
+    7. Access Relationships: e.g., [User, accesses, File].
+    8. Modification Relationships: e.g., [User, edits, Document].
+    9. Financial Transactions: e.g., [Account A, transfers funds to, Account B].
+    10. Social Connections: e.g., [User A, friends with, User B] on a social network.
+    11. Software Interactions: e.g., [Application, generates, Log file].
+    12. Content Relationships: e.g., [Document A, contains similar text to, Document B].
+
+- For each pair of related entities, extract the following information:
+    - source_entity: Name of the source entity, as identified in Step 2.
+    - target_entity: Name of the target entity, as identified in Step 2.
+    - relationship_type: One of the relationship types listed above.
+    - relationship_strength: A numeric score indicating strength of the relationship between the source entity and target entity (1-10, where 10 is the strongest).
+    - Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_type>{tuple_delimiter}<relationship_strength>).
+
+Final Output
+
+- Return output in English as a single list of all the entities and relationships identified in Steps 2 and 3. Use {record_delimiter} as the list delimiter.
+- Ensure that the output is focused on key entities and relationships, with unnecessary legal jargon or repetitive details minimized.
+- When finished, output {completion_delimiter}.
