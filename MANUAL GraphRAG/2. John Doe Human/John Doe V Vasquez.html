@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 2160px;
+                 background-color: #FFFFFF;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#4B8BBE", "font": {"color": "#333333"}, "id": "JohnDoe", "label": "John Doe", "shape": "dot", "size": 15, "title": "John Doe"}, {"color": "#D4A5A5", "font": {"color": "#333333"}, "id": "ProfessionalModel", "label": "Professional Model", "shape": "dot", "size": 15, "title": "Professional Model"}, {"color": "#4B8BBE", "font": {"color": "#333333"}, "id": "DamienVazquez", "label": "Damien Vazquez", "shape": "dot", "size": 15, "title": "Damien Vazquez"}, {"color": "#3498DB", "font": {"color": "#333333"}, "id": "UnknownCallerID", "label": "\"Unknown Caller ID\" Calls", "shape": "dot", "size": 15, "title": "\"Unknown Caller ID\" Calls"}, {"color": "#F28C28", "font": {"color": "#333333"}, "id": "BravoModels", "label": "Bravo Models", "shape": "dot", "size": 15, "title": "Bravo Models"}, {"color": "#EF476F", "font": {"color": "#333333"}, "id": "Instagram", "label": "Instagram", "shape": "dot", "size": 15, "title": "Instagram"}, {"color": "#073B4C", "font": {"color": "#333333"}, "id": "MobilePhone", "label": "Mobile Phone", "shape": "dot", "size": 15, "title": "Mobile Phone"}, {"color": "#06D6A0", "font": {"color": "#333333"}, "id": "PrivatePictures", "label": "Private Pictures", "shape": "dot", "size": 15, "title": "Private Pictures"}, {"color": "#4B8BBE", "font": {"color": "#333333"}, "id": "JohnDoesColleague", "label": "John Doe\u0027s Colleague", "shape": "dot", "size": 15, "title": "John Doe\u0027s Colleague"}, {"color": "#16A085", "font": {"color": "#333333"}, "id": "Trapcall", "label": "Trapcall.com", "shape": "dot", "size": 15, "title": "Trapcall.com"}, {"color": "#1F618D", "font": {"color": "#333333"}, "id": "CodySaintnew", "label": "@codysaintnew", "shape": "dot", "size": 15, "title": "@codysaintnew"}, {"color": "#1F618D", "font": {"color": "#333333"}, "id": "CodySaintgnuer", "label": "@cody_saintgnuer", "shape": "dot", "size": 15, "title": "@cody_saintgnuer"}, {"color": "#1F618D", "font": {"color": "#333333"}, "id": "SaintgnueBrasil", "label": "@SaintgnueBrasil", "shape": "dot", "size": 15, "title": "@SaintgnueBrasil"}, {"color": "#1F618D", "font": {"color": "#333333"}, "id": "Ddiivergent", "label": "@ddiivergent", "shape": "dot", "size": 15, "title": "@ddiivergent"}, {"color": "#D35400", "font": {"color": "#333333"}, "id": "Musicboysitems", "label": "musicboysitems@aol.com", "shape": "dot", "size": 15, "title": "musicboysitems@aol.com"}, {"color": "#D35400", "font": {"color": "#333333"}, "id": "Anotherdmusic", "label": "anotherdmusic@aol.com", "shape": "dot", "size": 15, "title": "anotherdmusic@aol.com"}, {"color": "#D35400", "font": {"color": "#333333"}, "id": "RichieRich", "label": "RichieRich1444@aol.com", "shape": "dot", "size": 15, "title": "RichieRich1444@aol.com"}, {"color": "#D35400", "font": {"color": "#333333"}, "id": "Platinumkid44", "label": "platinumkid44@gmail.com", "shape": "dot", "size": 15, "title": "platinumkid44@gmail.com"}, {"color": "#D35400", "font": {"color": "#333333"}, "id": "DollarDameDoller", "label": "DollarDameDoller@aol.com", "shape": "dot", "size": 15, "title": "DollarDameDoller@aol.com"}, {"color": "#D35400", "font": {"color": "#333333"}, "id": "Platinumkid1444", "label": "Platinumkid1444@gmail.com", "shape": "dot", "size": 15, "title": "Platinumkid1444@gmail.com"}, {"color": "#D35400", "font": {"color": "#333333"}, "id": "Damedoller", "label": "damedoller@aol.com", "shape": "dot", "size": 15, "title": "damedoller@aol.com"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber1", "label": "917-597-5622", "shape": "dot", "size": 15, "title": "917-597-5622"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber2", "label": "320-435-6727", "shape": "dot", "size": 15, "title": "320-435-6727"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber3", "label": "310-435-6727", "shape": "dot", "size": 15, "title": "310-435-6727"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber4", "label": "818-569-9062", "shape": "dot", "size": 15, "title": "818-569-9062"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber5", "label": "347-586-5852", "shape": "dot", "size": 15, "title": "347-586-5852"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber6", "label": "252-517-3289", "shape": "dot", "size": 15, "title": "252-517-3289"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber7", "label": "484-388-5390", "shape": "dot", "size": 15, "title": "484-388-5390"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber8", "label": "704-440-0790", "shape": "dot", "size": 15, "title": "704-440-0790"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber9", "label": "240-776-8586", "shape": "dot", "size": 15, "title": "240-776-8586"}, {"color": "#C0392B", "font": {"color": "#333333"}, "id": "PhoneNumber10", "label": "714-408-9384", "shape": "dot", "size": 15, "title": "714-408-9384"}, {"color": "#073B4C", "font": {"color": "#333333"}, "id": "JohnDoesMobilePhone", "label": "John Doe\u0027s Mobile Phone", "shape": "dot", "size": 15, "title": "John Doe\u0027s Mobile Phone"}, {"color": "#A3A847", "font": {"color": "#333333"}, "id": "SignedAgreement", "label": "Signed Agreement", "shape": "dot", "size": 15, "title": "Signed Agreement"}, {"color": "#F28C28", "font": {"color": "#333333"}, "id": "LoudPlatinum", "label": "Loud Platinum", "shape": "dot", "size": 15, "title": "Loud Platinum"}, {"color": "#8E44AD", "font": {"color": "#333333"}, "id": "ThirdParties", "label": "Third Parties", "shape": "dot", "size": 15, "title": "Third Parties"}, {"color": "#06D6A0", "font": {"color": "#333333"}, "id": "JohnDoesPrivatePictures", "label": "John Doe\u0027s Private Pictures", "shape": "dot", "size": 15, "title": "John Doe\u0027s Private Pictures"}, {"color": "#EF476F", "font": {"color": "#333333"}, "id": "SocialMediaWebsites", "label": "Social Media Websites", "shape": "dot", "size": 15, "title": "Social Media Websites"}, {"color": "#06D6A0", "font": {"color": "#333333"}, "id": "NudePhotos", "label": "Nude Photos", "shape": "dot", "size": 15, "title": "Nude Photos"}, {"color": "#F4D03F", "font": {"color": "#333333"}, "id": "MTV", "label": "MTV", "shape": "dot", "size": 15, "title": "MTV"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Works as a", "title": "Works as a", "to": "ProfessionalModel", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Broke Relationship with", "title": "Broke Relationship with", "to": "DamienVazquez", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Logged", "title": "Logged", "to": "UnknownCallerID", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Terminated Business Relationship", "title": "Terminated Business Relationship", "to": "BravoModels", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns accounts on", "title": "Owns accounts on", "to": "Instagram", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "MobilePhone", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PrivatePictures", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Knows", "title": "Knows", "to": "JohnDoesColleague", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Utilized", "title": "Utilized", "to": "Trapcall", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "CodySaintnew", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "CodySaintgnuer", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "SaintgnueBrasil", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "Ddiivergent", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "Musicboysitems", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "Anotherdmusic", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "RichieRich", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "Platinumkid44", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "DollarDameDoller", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "Platinumkid1444", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "Damedoller", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber1", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber2", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber3", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber4", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber5", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber6", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber7", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber8", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber9", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "PhoneNumber10", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Owns", "title": "Owns", "to": "JohnDoesMobilePhone", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "JohnDoe", "label": "Agreed to", "title": "Agreed to", "to": "SignedAgreement", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Owns", "title": "Owns", "to": "LoudPlatinum", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Signed Agreement to never contact", "title": "Signed Agreement to never contact", "to": "JohnDoe", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Shared Nudes with", "title": "Shared Nudes with", "to": "JohnDoesColleague", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Threatened dissemination of nudes to", "title": "Threatened dissemination of nudes to", "to": "ThirdParties", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Took", "title": "Took", "to": "JohnDoesMobilePhone", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Extracted", "title": "Extracted", "to": "JohnDoesPrivatePictures", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Posted", "title": "Posted", "to": "SocialMediaWebsites", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Associated with", "title": "Associated with", "to": "UnknownCallerID", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Refused to comply with", "title": "Refused to comply with", "to": "SignedAgreement", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Monitors", "title": "Monitors", "to": "CodySaintnew", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Monitors", "title": "Monitors", "to": "CodySaintgnuer", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Monitors", "title": "Monitors", "to": "SaintgnueBrasil", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Monitors", "title": "Monitors", "to": "Ddiivergent", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "Musicboysitems", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "Anotherdmusic", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "RichieRich", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "Platinumkid44", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "DollarDameDoller", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "Platinumkid1444", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "Damedoller", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber1", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber2", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber3", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber4", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber5", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber6", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber7", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber8", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber9", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Harasses using", "title": "Harasses using", "to": "PhoneNumber10", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Owns accounts on", "title": "Owns accounts on", "to": "Instagram", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "DamienVazquez", "label": "Took", "title": "Took", "to": "NudePhotos", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "NudePhotos", "label": "Sent to", "title": "Sent to", "to": "JohnDoesColleague", "width": 1.5}, {"arrows": "to", "color": "#9E9E9E", "from": "MTV", "label": "Cancelled offer with", "title": "Cancelled offer with", "to": "JohnDoe", "width": 1.5}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"borderWidth": 2, "shape": "dot", "font": {"size": 12, "face": "arial", "color": "#333333"}, "shadow": {"enabled": true, "color": "rgba(0,0,0,0.2)", "size": 10}}, "edges": {"arrows": {"to": {"enabled": true, "scaleFactor": 0.5}}, "color": {"inherit": false, "opacity": 0.7}, "smooth": {"enabled": true, "type": "dynamic"}, "shadow": {"enabled": true, "color": "rgba(0,0,0,0.2)", "size": 5}}, "physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -30000, "centralGravity": 0.3, "springLength": 150, "springConstant": 0.05, "damping": 0.09}, "minVelocity": 0.75}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,662 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="VISIT)(&quot;RELATIONSHIP&quot;">
+      <data key="d0">DAMIEN VAZQUEZ</data>
+      <data key="d1">JOHN DOE</data>
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="DAMIEN VAZQUEZ">
+      <data key="d0" />
+      <data key="d1">
+
+
+
+
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd,fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <node id="JOHN DOE'S MOTHER">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="NUDE OR SEMI-NUDE PHOTOS">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="SOCIAL MEDIA WEBSITES">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="MOBILE PHONE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="JOHN DOE">
+      <data key="d0" />
+      <data key="d1">
+
+
+
+
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd,fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <node id="PRIVATE PICTURES AND VIDEOS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="RENTAL PROPERTY">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="THREATS OF DISSEMINATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="EMAIL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="TEXT MESSAGE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="INDUSTRY PROFESSIONALS">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="FRIENDS">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="LOS ANGELES, CALIFORNIA">
+      <data key="d0" />
+      <data key="d1">
+
+</data>
+      <data key="d2">a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="COACHELLA VALLEY MUSIC AND ARTS FESTIVAL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="INDIO, CALIFORNIA">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="FRIENDSHIP">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">f715e4eea397549137713839886141cd</data>
+    </node>
+    <node id="TWITTER">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075ee0afd776e5c249005d183051fa6</data>
+    </node>
+    <node id="TUMBLER">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075ee0afd776e5c249005d183051fa6</data>
+    </node>
+    <node id="INSTAGRAM">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075ee0afd776e5c249005d183051fa6</data>
+    </node>
+    <node id="UNKNOWN CALLER ID">
+      <data key="d0" />
+      <data key="d1">
+
+</data>
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6</data>
+    </node>
+    <node id="TRAPCALL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075ee0afd776e5c249005d183051fa6</data>
+    </node>
+    <node id="SETTLEMENT AGREEMENT">
+      <data key="d0" />
+      <data key="d1">
+
+</data>
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6</data>
+    </node>
+    <node id="@CODYSAINTNEW">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </node>
+    <node id="@CODY_SAINTGNUE">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </node>
+    <node id="@SAINTGNUEBRASIL">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </node>
+    <node id="@DDIIVERGENT">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </node>
+    <node id="MTV NETWORKS">
+      <data key="d0" />
+      <data key="d1">
+
+
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <node id="BRAVO MODELS">
+      <data key="d0" />
+      <data key="d1">
+
+
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <node id="TEEN WOLF)(&quot;RELATIONSHIP&quot;">
+      <data key="d0">JOHN DOE</data>
+      <data key="d1">DAMIEN VAZQUEZ</data>
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="PLATINUMKID44@GMAIL.COM">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="MUSICBOYSITEMS@AOL.COM">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="ANOTHERDMUSIC@AOL.COM">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="RICHIERICH1444@AOL.COM">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="DOLLARDAMEDOLLER@AOL.COM">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="PLATINUMKID1444@GMAIL.COM">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="DAMEDOLLER@AOL.COM">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="NOVEMBER 21, 2016">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="TEEN WOLF">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">8e71275ac2eb3a46c061765a81d0ee87</data>
+    </node>
+    <node id="917-597-5622">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="320-435-6727">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="310-435-6727">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="818-569-9062">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="347-586-5852">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="252-517-3289">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="484-388-5390">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="704-440-0790">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="240-776-8586">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="714-408-9384">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="TEEN WOLF FINAL SEASON">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="PROMOTIONAL TAPING">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </node>
+    <node id="LOCATION">
+      <data key="d0">HOME)("RELATIONSHIP"</data>
+      <data key="d1">PHONE NUMBER</data>
+      <data key="d2">fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <node id="HOME">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <node id="EVENT">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <node id="DATE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">fcc127f185eb75c75597d678e197eab9</data>
+    </node>
+    <edge source="DAMIEN VAZQUEZ" target="JOHN DOE'S MOTHER">
+      <data key="d3">1.0</data>
+      <data key="d4">Communication Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="NUDE OR SEMI-NUDE PHOTOS">
+      <data key="d3">4.0</data>
+      <data key="d4">Content RelationshipsModification RelationshipsOwnership/Association
+Causal Relationships</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="SOCIAL MEDIA WEBSITES">
+      <data key="d3">2.0</data>
+      <data key="d4">Causal RelationshipsData Flow</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="MOBILE PHONE">
+      <data key="d3">1.0</data>
+      <data key="d4">Ownership/Association</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="PRIVATE PICTURES AND VIDEOS">
+      <data key="d3">1.0</data>
+      <data key="d4">Causal Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="RENTAL PROPERTY">
+      <data key="d3">1.0</data>
+      <data key="d4">Spatial Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="THREATS OF DISSEMINATION">
+      <data key="d3">1.0</data>
+      <data key="d4">Causal Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="EMAIL">
+      <data key="d3">1.0</data>
+      <data key="d4">Communication Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="TEXT MESSAGE">
+      <data key="d3">1.0</data>
+      <data key="d4">Communication Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="INDUSTRY PROFESSIONALS">
+      <data key="d3">1.0</data>
+      <data key="d4">Communication Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="FRIENDS">
+      <data key="d3">1.0</data>
+      <data key="d4">Social Connections</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="LOS ANGELES, CALIFORNIA">
+      <data key="d3">3.0</data>
+      <data key="d4">Spatial Relationships
+Spatial Relationships
+SPATIAL RELATIONSHIP</data>
+      <data key="d5">a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="JOHN DOE">
+      <data key="d3">11.0</data>
+      <data key="d4">Friendship
+Communication Relationships
+Causal RelationshipCOMMUNICATION RELATIONSHIP
+Social ConnectionsAccess Relationships
+Causal RelationshipsCommunication Relationships
+causal relationship</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6,f715e4eea397549137713839886141cd,fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="COACHELLA VALLEY MUSIC AND ARTS FESTIVAL">
+      <data key="d3">1.0</data>
+      <data key="d4">Spatial Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="INDIO, CALIFORNIA">
+      <data key="d3">1.0</data>
+      <data key="d4">Spatial Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="FRIENDSHIP">
+      <data key="d3">1.0</data>
+      <data key="d4">Causal Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="UNKNOWN CALLER ID">
+      <data key="d3">3.0</data>
+      <data key="d4">Access Relationships
+COMMUNICATION RELATIONSHIP
+Ownership/Association</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="SETTLEMENT AGREEMENT">
+      <data key="d3">2.0</data>
+      <data key="d4">OWNERSHIP/ASSOCIATION
+Causal Relationships</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="@CODYSAINTNEW">
+      <data key="d3">2.0</data>
+      <data key="d4">SOCIAL CONNECTIONS
+Social Connections</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="@CODY_SAINTGNUE">
+      <data key="d3">2.0</data>
+      <data key="d4">SOCIAL CONNECTIONS
+Social Connections</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="@SAINTGNUEBRASIL">
+      <data key="d3">2.0</data>
+      <data key="d4">SOCIAL CONNECTIONS
+Social Connections</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="@DDIIVERGENT">
+      <data key="d3">2.0</data>
+      <data key="d4">SOCIAL CONNECTIONS
+Social Connections</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="PLATINUMKID44@GMAIL.COM">
+      <data key="d3">2.0</data>
+      <data key="d4">Communication Relationships
+Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="MUSICBOYSITEMS@AOL.COM">
+      <data key="d3">2.0</data>
+      <data key="d4">Communication Relationships
+Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="ANOTHERDMUSIC@AOL.COM">
+      <data key="d3">2.0</data>
+      <data key="d4">Communication Relationships
+Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="RICHIERICH1444@AOL.COM">
+      <data key="d3">2.0</data>
+      <data key="d4">Communication Relationships
+Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="DOLLARDAMEDOLLER@AOL.COM">
+      <data key="d3">2.0</data>
+      <data key="d4">Communication Relationships
+Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="PLATINUMKID1444@GMAIL.COM">
+      <data key="d3">2.0</data>
+      <data key="d4">Communication Relationships
+Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="DAMEDOLLER@AOL.COM">
+      <data key="d3">2.0</data>
+      <data key="d4">Communication Relationships
+Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="917-597-5622">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="320-435-6727">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="310-435-6727">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="818-569-9062">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="347-586-5852">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="252-517-3289">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="484-388-5390">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="704-440-0790">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="240-776-8586">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="714-408-9384">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="DAMIEN VAZQUEZ" target="BRAVO MODELS">
+      <data key="d3">1.0</data>
+      <data key="d4">causal relationship</data>
+      <data key="d5">fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="JOHN DOE'S MOTHER" target="JOHN DOE">
+      <data key="d3">1.0</data>
+      <data key="d4">Ownership/Association</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="NUDE OR SEMI-NUDE PHOTOS" target="JOHN DOE">
+      <data key="d3">1.0</data>
+      <data key="d4">Access Relationships</data>
+      <data key="d5">f715e4eea397549137713839886141cd</data>
+    </edge>
+    <edge source="NUDE OR SEMI-NUDE PHOTOS" target="SOCIAL MEDIA WEBSITES">
+      <data key="d3">1.0</data>
+      <data key="d4">Data Flow</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="NUDE OR SEMI-NUDE PHOTOS" target="TWITTER">
+      <data key="d3">1.0</data>
+      <data key="d4">Content Relationships</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="NUDE OR SEMI-NUDE PHOTOS" target="TUMBLER">
+      <data key="d3">1.0</data>
+      <data key="d4">Content Relationships</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="NUDE OR SEMI-NUDE PHOTOS" target="INSTAGRAM">
+      <data key="d3">1.0</data>
+      <data key="d4">Content Relationships</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="JOHN DOE" target="FRIENDS">
+      <data key="d3">1.0</data>
+      <data key="d4">Ownership/Association</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="JOHN DOE" target="INDUSTRY PROFESSIONALS">
+      <data key="d3">1.0</data>
+      <data key="d4">Ownership/Association</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="JOHN DOE" target="TRAPCALL">
+      <data key="d3">1.0</data>
+      <data key="d4">Software Interactions</data>
+      <data key="d5">c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="JOHN DOE" target="SETTLEMENT AGREEMENT">
+      <data key="d3">2.0</data>
+      <data key="d4">Ownership/Association
+OWNERSHIP/ASSOCIATION</data>
+      <data key="d5">a387bcafc5a0d4ae2722a66006fd7f5c,c075ee0afd776e5c249005d183051fa6</data>
+    </edge>
+    <edge source="JOHN DOE" target="MTV NETWORKS">
+      <data key="d3">5.0</data>
+      <data key="d4">OWNERSHIP/ASSOCIATION
+Ownership/Association
+Financial TransactionsOwnership/Association
+ownership/association</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="JOHN DOE" target="BRAVO MODELS">
+      <data key="d3">4.0</data>
+      <data key="d4">OWNERSHIP/ASSOCIATION
+Ownership/Association
+Ownership/Association
+ownership/association</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0,8e71275ac2eb3a46c061765a81d0ee87,a387bcafc5a0d4ae2722a66006fd7f5c,fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="JOHN DOE" target="TEEN WOLF">
+      <data key="d3">1.0</data>
+      <data key="d4">Ownership/Association</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="JOHN DOE" target="TEEN WOLF FINAL SEASON">
+      <data key="d3">1.0</data>
+      <data key="d4">Ownership/Association</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="JOHN DOE" target="PROMOTIONAL TAPING">
+      <data key="d3">1.0</data>
+      <data key="d4">Ownership/Association</data>
+      <data key="d5">3b4e0949021b5b5c42b254f6c9a648b0</data>
+    </edge>
+    <edge source="JOHN DOE" target="HOME">
+      <data key="d3">1.0</data>
+      <data key="d4">located at</data>
+      <data key="d5">fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="JOHN DOE" target="EVENT">
+      <data key="d3">1.0</data>
+      <data key="d4">involves</data>
+      <data key="d5">fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="SETTLEMENT AGREEMENT" target="NOVEMBER 21, 2016">
+      <data key="d3">1.0</data>
+      <data key="d4">Temporal Relationships</data>
+      <data key="d5">8e71275ac2eb3a46c061765a81d0ee87</data>
+    </edge>
+    <edge source="MTV NETWORKS" target="EVENT">
+      <data key="d3">1.0</data>
+      <data key="d4">involves</data>
+      <data key="d5">fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="BRAVO MODELS" target="EVENT">
+      <data key="d3">1.0</data>
+      <data key="d4">involves</data>
+      <data key="d5">fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+    <edge source="EVENT" target="DATE">
+      <data key="d3">1.0</data>
+      <data key="d4">occurs during</data>
+      <data key="d5">fcc127f185eb75c75597d678e197eab9</data>
+    </edge>
+  </graph>
+</graphml>

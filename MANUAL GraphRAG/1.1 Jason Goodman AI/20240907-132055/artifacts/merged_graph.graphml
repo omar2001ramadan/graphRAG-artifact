@@ -1,0 +1,145 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="JASON GOODMAN">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="BOUZY">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="BENJAMIN WITTES">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="TWITTER">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="DEFAMATORY TWEETS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="SOCIAL MEDIA ACCOUNTS">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="DECEMBER 2020">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="DECEMBER 17, 2021">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="DECEMBER 20, 2020">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="PHONE NUMBER">
+      <data key="d0" />
+      <data key="d1">
+</data>
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </node>
+    <node id="REPUTATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb</data>
+    </node>
+    <node id="BUSINESS OPERATIONS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">559e8415a8e50ea2b1ab5a337475e1fb</data>
+    </node>
+    <edge source="JASON GOODMAN" target="BOUZY">
+      <data key="d3">5.0</data>
+      <data key="d4">HARASSMENTCAUSAL RELATIONSHIPSCOMMUNICATION RELATIONSHIPS
+DEFAMATION CAMPAIGNCOMMUNICATION RELATIONSHIP</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+    <edge source="JASON GOODMAN" target="BENJAMIN WITTES">
+      <data key="d3">1.0</data>
+      <data key="d4">SOCIAL CONNECTIONS</data>
+      <data key="d5">656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+    <edge source="JASON GOODMAN" target="TWITTER">
+      <data key="d3">1.0</data>
+      <data key="d4">INTERNET ACTIVITY</data>
+      <data key="d5">656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+    <edge source="JASON GOODMAN" target="SOCIAL MEDIA ACCOUNTS">
+      <data key="d3">2.0</data>
+      <data key="d4">OWNERSHIP/ASSOCIATION
+ASSOCIATED WITH</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+    <edge source="JASON GOODMAN" target="PHONE NUMBER">
+      <data key="d3">2.0</data>
+      <data key="d4">SEARCH QUERY
+SEARCHES FOR</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb,656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+    <edge source="JASON GOODMAN" target="REPUTATION">
+      <data key="d3">1.0</data>
+      <data key="d4">AFFECTED BY</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb</data>
+    </edge>
+    <edge source="JASON GOODMAN" target="BUSINESS OPERATIONS">
+      <data key="d3">1.0</data>
+      <data key="d4">AFFECTED BY</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb</data>
+    </edge>
+    <edge source="BOUZY" target="DEFAMATORY TWEETS">
+      <data key="d3">1.0</data>
+      <data key="d4">CONTENT RELATIONSHIPS</data>
+      <data key="d5">656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+    <edge source="BOUZY" target="TWITTER">
+      <data key="d3">1.0</data>
+      <data key="d4">USES FOR DEFAMATION</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb</data>
+    </edge>
+    <edge source="BOUZY" target="DECEMBER 17, 2021">
+      <data key="d3">1.0</data>
+      <data key="d4">REPUBLICATION DATE</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb</data>
+    </edge>
+    <edge source="BOUZY" target="DECEMBER 20, 2020">
+      <data key="d3">1.0</data>
+      <data key="d4">ORIGINAL DEFAMATORY STATEMENT DATE</data>
+      <data key="d5">559e8415a8e50ea2b1ab5a337475e1fb</data>
+    </edge>
+    <edge source="DECEMBER 2020" target="DECEMBER 17, 2021">
+      <data key="d3">1.0</data>
+      <data key="d4">TEMPORAL RELATIONSHIPS</data>
+      <data key="d5">656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+    <edge source="DECEMBER 17, 2021" target="DECEMBER 20, 2020">
+      <data key="d3">1.0</data>
+      <data key="d4">TEMPORAL RELATIONSHIPS</data>
+      <data key="d5">656bde5f9297ddd22eede10e4d8187e5</data>
+    </edge>
+  </graph>
+</graphml>
