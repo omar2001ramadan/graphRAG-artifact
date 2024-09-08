@@ -1,0 +1,1944 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="level" attr.type="long" />
+  <key id="d12" for="edge" attr.name="human_readable_id" attr.type="long" />
+  <key id="d11" for="edge" attr.name="id" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="description" attr.type="string" />
+  <key id="d8" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d7" for="node" attr.name="level" attr.type="long" />
+  <key id="d6" for="node" attr.name="cluster" attr.type="string" />
+  <key id="d5" for="node" attr.name="id" attr.type="string" />
+  <key id="d4" for="node" attr.name="human_readable_id" attr.type="long" />
+  <key id="d3" for="node" attr.name="degree" attr.type="long" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="RACHEL DEPALMA">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69,249459e607d2c0a0757cb1c3ca35a04e,3fb0a3a81592938a6462351bcb3203ec,51bb191c26a4a6c71609e7b8172be62b,77ba529fd57de0482adbb1545bd0f2ce,7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7,bf7dd12ddb2c91e697cf05d4f3cb7e09,c010e318bffbec176b63755dbcb32e9b,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d3">36</data>
+      <data key="d4">0</data>
+      <data key="d5">b45241d70f0e43fca764df95b2b81f77</data>
+    </node>
+    <node id="IP ADDRESS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f,bf7dd12ddb2c91e697cf05d4f3cb7e09,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">10</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">1</data>
+      <data key="d5">4119fd06010c494caa07f439b333f4c5</data>
+    </node>
+    <node id="DEFENDANT KORSLUND">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">12</data>
+      <data key="d7">1</data>
+      <data key="d3">11</data>
+      <data key="d4">2</data>
+      <data key="d5">d3835bf3dda84ead99deadbeac5d0d7d</data>
+    </node>
+    <node id="DEFENDANT KERNS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">11</data>
+      <data key="d7">1</data>
+      <data key="d3">12</data>
+      <data key="d4">3</data>
+      <data key="d5">077d2820ae1845bcbb1803379a3d1eae</data>
+    </node>
+    <node id="ACCOUNT @WHATDOESITMATTER">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">11</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+      <data key="d5">3671ea0dd4e84c1a9b02c5ab2c8f4bac</data>
+    </node>
+    <node id="VIDEO">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,51bb191c26a4a6c71609e7b8172be62b,77ba529fd57de0482adbb1545bd0f2ce,7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,bf7dd12ddb2c91e697cf05d4f3cb7e09,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">14</data>
+      <data key="d4">5</data>
+      <data key="d5">19a7f254a5d64566ab5cc15472df02de</data>
+    </node>
+    <node id="MTS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">249459e607d2c0a0757cb1c3ca35a04e,51bb191c26a4a6c71609e7b8172be62b,77ba529fd57de0482adbb1545bd0f2ce,7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,bf7dd12ddb2c91e697cf05d4f3cb7e09,c010e318bffbec176b63755dbcb32e9b,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">14</data>
+      <data key="d7">1</data>
+      <data key="d3">7</data>
+      <data key="d4">6</data>
+      <data key="d5">e7ffaee9d31d4d3c96e04f911d0a8f9e</data>
+    </node>
+    <node id="LEGAL DOCUMENTATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d3">1</data>
+      <data key="d4">7</data>
+      <data key="d5">f7e11b0e297a44a896dc67928368f600</data>
+    </node>
+    <node id="WEBSITE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d3">1</data>
+      <data key="d4">8</data>
+      <data key="d5">1fd3fa8bb5a2408790042ab9573779ee</data>
+    </node>
+    <node id="TIKTOK">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,51bb191c26a4a6c71609e7b8172be62b,67833986bc48d0231a96f171d7b372f5,77ba529fd57de0482adbb1545bd0f2ce,7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7,bf7dd12ddb2c91e697cf05d4f3cb7e09,c010e318bffbec176b63755dbcb32e9b,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">8</data>
+      <data key="d4">9</data>
+      <data key="d5">27f9fbe6ad8c4a8b9acee0d3596ed57c</data>
+    </node>
+    <node id="ABUSE SURVIVORS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,77ba529fd57de0482adbb1545bd0f2ce,7af44641b2435eed1fae8fb11ea1f145,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">11</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">10</data>
+      <data key="d5">e1fd0e904a53409aada44442f23a51cb</data>
+    </node>
+    <node id="ANONYMOUS REPORTING PORTAL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">14</data>
+      <data key="d7">1</data>
+      <data key="d3">2</data>
+      <data key="d4">11</data>
+      <data key="d5">de988724cfdf45cebfba3b13c43ceede</data>
+    </node>
+    <node id="DATE: NOVEMBER 27, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">12</data>
+      <data key="d5">96aad7cb4b7d40e9b7e13b94a67af206</data>
+    </node>
+    <node id="DATE: NOVEMBER 29, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">13</data>
+      <data key="d5">c9632a35146940c2a86167c7726d35e9</data>
+    </node>
+    <node id="EVIDENCE)(&quot;RELATIONSHIP&quot;">
+      <data key="d0">RACHEL DEPALMA</data>
+      <data key="d1">DEFENDANT KERNS</data>
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d3">0</data>
+      <data key="d4">14</data>
+      <data key="d5">9646481f66ce4fd2b08c2eddda42fc82</data>
+    </node>
+    <node id="SAMANTHA KERNS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">249459e607d2c0a0757cb1c3ca35a04e,51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d6">11</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">15</data>
+      <data key="d5">d91a266f766b4737a06b0fda588ba40b</data>
+    </node>
+    <node id="TRACY KORSLUND">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">249459e607d2c0a0757cb1c3ca35a04e,51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d6">14</data>
+      <data key="d7">1</data>
+      <data key="d3">4</data>
+      <data key="d4">16</data>
+      <data key="d5">bc0e3f075a4c4ebbb7c7b152b65a5625</data>
+    </node>
+    <node id="LAURINDA KIRK">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">249459e607d2c0a0757cb1c3ca35a04e,51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d6">11</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">17</data>
+      <data key="d5">254770028d7a4fa9877da4ba0ad5ad21</data>
+    </node>
+    <node id="ACCOUNT @NARCTOK_ROYALTY">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">12</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">18</data>
+      <data key="d5">4a67211867e5464ba45126315a122a8a</data>
+    </node>
+    <node id="NOPEACENOQUIET.ORG">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,7af44641b2435eed1fae8fb11ea1f145,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">13</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">19</data>
+      <data key="d5">04dbbb2283b845baaeac0eaf0c34c9da</data>
+    </node>
+    <node id="FAKE COMPLAINTS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">13</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">20</data>
+      <data key="d5">1943f245ee4243bdbfbd2fd619ae824a</data>
+    </node>
+    <node id="DELETED VIDEO">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">21</data>
+      <data key="d5">273daeec8cad41e6b3e450447db58ee7</data>
+    </node>
+    <node id="TEXT OVER VIDEO">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">22</data>
+      <data key="d5">e69dc259edb944ea9ea41264b9fcfe59</data>
+    </node>
+    <node id="SECURE WEBSITE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d3">1</data>
+      <data key="d4">23</data>
+      <data key="d5">e2f5735c7d714423a2c4f61ca2644626</data>
+    </node>
+    <node id="LEGAL ACCREDITATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d3">1</data>
+      <data key="d4">24</data>
+      <data key="d5">deece7e64b2a4628850d4bb6e394a9c3</data>
+    </node>
+    <node id="FALSE LIGHT">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">12</data>
+      <data key="d7">1</data>
+      <data key="d3">2</data>
+      <data key="d4">25</data>
+      <data key="d5">e657b5121ff8456b9a610cfaead8e0cb</data>
+    </node>
+    <node id="DOMESTIC VIOLENCE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d3">1</data>
+      <data key="d4">26</data>
+      <data key="d5">bf4e255cdac94ccc83a56435a5e4b075</data>
+    </node>
+    <node id="TIKTOK USERS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">12</data>
+      <data key="d7">1</data>
+      <data key="d3">2</data>
+      <data key="d4">27</data>
+      <data key="d5">3b040bcc19f14e04880ae52881a89c1c</data>
+    </node>
+    <node id="DATE NOVEMBER 29, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">28</data>
+      <data key="d5">3d6b216c14354332b1bf1927ba168986</data>
+    </node>
+    <node id="DATE NOVEMBER 27, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">29</data>
+      <data key="d5">1c109cfdc370463eb6d537e5b7b382fb</data>
+    </node>
+    <node id="NPEACENOQUIET.ORG">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">51bb191c26a4a6c71609e7b8172be62b</data>
+      <data key="d6">12</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">30</data>
+      <data key="d5">3d0dcbc8971b415ea18065edc4d8c8ef</data>
+    </node>
+    <node id="URL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,51bb191c26a4a6c71609e7b8172be62b,77ba529fd57de0482adbb1545bd0f2ce,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">31</data>
+      <data key="d5">68105770b523412388424d984e711917</data>
+    </node>
+    <node id="DATE)(&quot;RELATIONSHIP&quot;">
+      <data key="d0">RACHEL DEPALMA</data>
+      <data key="d1">KORSLUND</data>
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d3">0</data>
+      <data key="d4">32</data>
+      <data key="d5">85c79fd84f5e4f918471c386852204c5</data>
+    </node>
+    <node id="KORSLUND">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5,77ba529fd57de0482adbb1545bd0f2ce,a02ba061dc95d27660cc631d66398d3f,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">12</data>
+      <data key="d4">33</data>
+      <data key="d5">eae4259b19a741ab9f9f6af18c4a0470</data>
+    </node>
+    <node id="MARK BELMESSIERI">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d3">3</data>
+      <data key="d4">34</data>
+      <data key="d5">3138f39f2bcd43a69e0697cd3b05bc4d</data>
+    </node>
+    <node id="RESTRAINING ORDER">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d3">1</data>
+      <data key="d4">35</data>
+      <data key="d5">dde131ab575d44dbb55289a6972be18f</data>
+    </node>
+    <node id="CASE SUMMARY">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d3">2</data>
+      <data key="d4">36</data>
+      <data key="d5">de9e343f2e334d88a8ac7f8813a915e5</data>
+    </node>
+    <node id="AMENDED COMPLAINT">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d3">1</data>
+      <data key="d4">37</data>
+      <data key="d5">e2bf260115514fb3b252fd879fb3e7be</data>
+    </node>
+    <node id="TEXT CONVERSATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d3">1</data>
+      <data key="d4">38</data>
+      <data key="d5">b462b94ce47a4b8c8fffa33f7242acec</data>
+    </node>
+    <node id="DATE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d6">7</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">39</data>
+      <data key="d5">17ed1d92075643579a712cc6c29e8ddb</data>
+    </node>
+    <node id="KORSUND'S VIDEO">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d6">9</data>
+      <data key="d7">1</data>
+      <data key="d3">5</data>
+      <data key="d4">40</data>
+      <data key="d5">3ce7c210a21b4deebad7cc9308148d86</data>
+    </node>
+    <node id="@THE.SILLIEST.HO">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d6">9</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">41</data>
+      <data key="d5">d64ed762ea924caa95c8d06f072a9a96</data>
+    </node>
+    <node id="@NARCTOCK_ROYALTY">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d6">9</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">42</data>
+      <data key="d5">adf4ee3fbe9b4d0381044838c4f889c8</data>
+    </node>
+    <node id="DOMESTIC VIOLENCE SURVIVORS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">249459e607d2c0a0757cb1c3ca35a04e,a815d00251c088d676e123cc67e599f7,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d3">1</data>
+      <data key="d4">43</data>
+      <data key="d5">32ee140946e5461f9275db664dc541a5</data>
+    </node>
+    <node id="ANONYMOUS PORTAL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d3">1</data>
+      <data key="d4">44</data>
+      <data key="d5">c160b9cb27d6408ba6ab20214a2f3f81</data>
+    </node>
+    <node id="DIANE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d3">1</data>
+      <data key="d4">45</data>
+      <data key="d5">23527cd679ff4d5a988d52e7cd056078</data>
+    </node>
+    <node id="DECEMBER 4, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">9</data>
+      <data key="d7">1</data>
+      <data key="d3">2</data>
+      <data key="d4">46</data>
+      <data key="d5">f1c6eed066f24cbdb376b910fce29ed4</data>
+    </node>
+    <node id="DECEMBER 8, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">9</data>
+      <data key="d7">1</data>
+      <data key="d3">2</data>
+      <data key="d4">47</data>
+      <data key="d5">83a6cb03df6b41d8ad6ee5f6fef5f024</data>
+    </node>
+    <node id="COMPLAINT">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">a815d00251c088d676e123cc67e599f7,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d3">1</data>
+      <data key="d4">48</data>
+      <data key="d5">147c038aef3e4422acbbc5f7938c4ab8</data>
+    </node>
+    <node id="VIDEO)(&quot;RELATIONSHIP&quot;">
+      <data key="d0">RACHEL DEPALMA</data>
+      <data key="d1">KORSUND</data>
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d3">0</data>
+      <data key="d4">49</data>
+      <data key="d5">b7702b90c7f24190b864e8c6e64612a5</data>
+    </node>
+    <node id="KIRK">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,67833986bc48d0231a96f171d7b372f5,77ba529fd57de0482adbb1545bd0f2ce,bf7dd12ddb2c91e697cf05d4f3cb7e09,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">23</data>
+      <data key="d4">50</data>
+      <data key="d5">de6fa24480894518ab3cbcb66f739266</data>
+    </node>
+    <node id="KORSUND">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">10</data>
+      <data key="d7">1</data>
+      <data key="d3">11</data>
+      <data key="d4">51</data>
+      <data key="d5">6fae5ee1a831468aa585a1ea09095998</data>
+    </node>
+    <node id="NOVEMBER 30, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">52</data>
+      <data key="d5">ef32c4b208d041cc856f6837915dc1b0</data>
+    </node>
+    <node id="VIDEO 1">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">10</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">53</data>
+      <data key="d5">07b2425216bd4f0aa4e079827cb48ef5</data>
+    </node>
+    <node id="VIDEO 2">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">10</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">54</data>
+      <data key="d5">2670deebfa3f4d69bb82c28ab250a209</data>
+    </node>
+    <node id="VIDEO 3">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">10</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">55</data>
+      <data key="d5">404309e89a5241d6bff42c05a45df206</data>
+    </node>
+    <node id="VIDEO 4">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">10</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">56</data>
+      <data key="d5">b785a9025069417f94950ad231bb1441</data>
+    </node>
+    <node id="DOMESTIC ABUSE SURVIVORS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d3">1</data>
+      <data key="d4">57</data>
+      <data key="d5">3b6cd96a27304614850709aba1c9598b</data>
+    </node>
+    <node id="FINANCIAL TRANSACTIONS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d6">10</data>
+      <data key="d7">1</data>
+      <data key="d3">2</data>
+      <data key="d4">58</data>
+      <data key="d5">d54956b79dd147f894b67a8b97dcbef0</data>
+    </node>
+    <node id="ANONYMOUS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d3">1</data>
+      <data key="d4">59</data>
+      <data key="d5">958beecdb5bb4060948415ffd75d2b03</data>
+    </node>
+    <node id="URL)(&quot;RELATIONSHIP&quot;">
+      <data key="d0">KIRK</data>
+      <data key="d1">RACHEL DEPALMA</data>
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d3">0</data>
+      <data key="d4">60</data>
+      <data key="d5">b999ed77e19e4f85b7f1ae79af5c002a</data>
+    </node>
+    <node id="WHOLSEOMEHEALINGATL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">61</data>
+      <data key="d5">48c0c4d72da74ff5bb926fa0c856d1a7</data>
+    </node>
+    <node id="NOQUIETNOPEACE.ORG">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec,67833986bc48d0231a96f171d7b372f5,77ba529fd57de0482adbb1545bd0f2ce,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">62</data>
+      <data key="d5">4f3c97517f794ebfb49c4c6315f9cf23</data>
+    </node>
+    <node id="FORM">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">63</data>
+      <data key="d5">1745a2485a9443bab76587ad650e9be0</data>
+    </node>
+    <node id="SMEAR CAMPAIGN MISCONDUCT TICKETING SYSTEM">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">64</data>
+      <data key="d5">32e6ccab20d94029811127dbbe424c64</data>
+    </node>
+    <node id="SOCIAL MEDIA">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">65</data>
+      <data key="d5">94a964c6992945ebb3833dfdfdc8d655</data>
+    </node>
+    <node id="VPN">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">66</data>
+      <data key="d5">1eb829d0ace042089f0746f78729696c</data>
+    </node>
+    <node id="DONATIONS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d3">1</data>
+      <data key="d4">67</data>
+      <data key="d5">015e7b58d1a14b44beab3bbc9f912c18</data>
+    </node>
+    <node id="VIDEO URL)(&quot;RELATIONSHIP&quot;">
+      <data key="d0">KIRK</data>
+      <data key="d1">RACHEL DEPALMA</data>
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d3">0</data>
+      <data key="d4">68</data>
+      <data key="d5">26f88ab3e2e04c33a459ad6270ade565</data>
+    </node>
+    <node id="@WHOLESOMEHEALINGATL">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">69</data>
+      <data key="d5">babe97e1d9784cffa1c85abc1e588126</data>
+    </node>
+    <node id="KERNS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">6</data>
+      <data key="d4">70</data>
+      <data key="d5">1033a18c45aa4584b2aef6ab96890351</data>
+    </node>
+    <node id="@WHATDOESITMATTER">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">71</data>
+      <data key="d5">c9b8ce91fc2945b4907fe35519339cac</data>
+    </node>
+    <node id="@NARCTOK_ROYALTY">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">72</data>
+      <data key="d5">fa3c4204421c48609e52c8de2da4c654</data>
+    </node>
+    <node id="@THE.SILLYEST.HO">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">73</data>
+      <data key="d5">53af055f068244d0ac861b2e89376495</data>
+    </node>
+    <node id="@JADALOUS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">74</data>
+      <data key="d5">c03ab3ce8cb74ad2a03b94723bfab3c7</data>
+    </node>
+    <node id="FALSE INFORMATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">75</data>
+      <data key="d5">ed6d2eee9d7b4f5db466b1f6404d31cc</data>
+    </node>
+    <node id="DECEMBER 9, 2021">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">2</data>
+      <data key="d4">76</data>
+      <data key="d5">fc01e9baa80e417c9206f941bb279407</data>
+    </node>
+    <node id="INSTAGRAM">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d6">6</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">77</data>
+      <data key="d5">56d0e5ebe79e4814bd1463cf6ca21394</data>
+    </node>
+    <node id="DEPALMA">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">8</data>
+      <data key="d7">1</data>
+      <data key="d3">8</data>
+      <data key="d4">78</data>
+      <data key="d5">7c49f2710e8b4d3b8dc9310834406ea5</data>
+    </node>
+    <node id="REPUTATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">8</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">79</data>
+      <data key="d5">c6d1e4f56c2843e89cf0b91c10bb6de2</data>
+    </node>
+    <node id="DOMESTIC_VIOLENCE_SURVIVORS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">8</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">80</data>
+      <data key="d5">0adb2d9941f34ef7b2f7743cc6225844</data>
+    </node>
+    <node id="LAWSUITS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">81</data>
+      <data key="d5">6b02373137fd438ba96af28f735cdbdb</data>
+    </node>
+    <node id="MENTAL_ANGUISH">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">8</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">82</data>
+      <data key="d5">36a4fcd8efc144e6b8af9a1c7ab8b2ce</data>
+    </node>
+    <node id="FALSE_INFORMATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">5</data>
+      <data key="d7">1</data>
+      <data key="d3">3</data>
+      <data key="d4">83</data>
+      <data key="d5">fbeef791d19b413a9c93c6608286ab63</data>
+    </node>
+    <node id="TRADE_AND_PROFESSION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">8</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">84</data>
+      <data key="d5">d2b629c0396f4180a03e16ddf3818589</data>
+    </node>
+    <node id="DOMESTIC_ABUSE_SUPPORT_COMMUNITY">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d6">8</data>
+      <data key="d7">1</data>
+      <data key="d3">1</data>
+      <data key="d4">85</data>
+      <data key="d5">6102fc6619ed422ebc42588bfa97355d</data>
+    </node>
+    <node id="DOMESTIC ABUSE SUPPORT COMMUNITY">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69,249459e607d2c0a0757cb1c3ca35a04e</data>
+      <data key="d3">2</data>
+      <data key="d4">86</data>
+      <data key="d5">8d141c0b80f74b79a05eed7fe161fe49</data>
+    </node>
+    <node id="INJURY TO HER REPUTATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d3">1</data>
+      <data key="d4">87</data>
+      <data key="d5">e22d1d1cd8d14f12b81828d940f40d70</data>
+    </node>
+    <node id="SHAME">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d3">1</data>
+      <data key="d4">88</data>
+      <data key="d5">9ab48505fb1b487babd0d1f6d3a3f980</data>
+    </node>
+    <node id="MORTIFICATION">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d3">1</data>
+      <data key="d4">89</data>
+      <data key="d5">148fffeb994541b2b4b6dcefda7001a8</data>
+    </node>
+    <node id="MENTAL ANGUISH">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d3">1</data>
+      <data key="d4">90</data>
+      <data key="d5">89c08e793298442686292454a1abff31</data>
+    </node>
+    <node id="INJURY TO HER FEELINGS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d3">1</data>
+      <data key="d4">91</data>
+      <data key="d5">0467928aa65e4a4fba62bdb1467e3a54</data>
+    </node>
+    <node id="INDIVIDUALS">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d3">2</data>
+      <data key="d4">92</data>
+      <data key="d5">43c3390303c6476cb65f584e37c3e81c</data>
+    </node>
+    <edge source="RACHEL DEPALMA" target="IP ADDRESS">
+      <data key="d8">2.0</data>
+      <data key="d9">Rachel DePalma is associated with an IP address that has been doxxed, indicating that her personal information has been publicly exposed without her consent. Additionally, it is noted that she owns this IP address.</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">fa14b16c17e3417dba5a4b473ea5b18d</data>
+      <data key="d12">0</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="VIDEO">
+      <data key="d8">1.0</data>
+      <data key="d9">contains content from</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">7cc3356d38de4328a51a5cbcb187dac3</data>
+      <data key="d12">1</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="MTS">
+      <data key="d8">6.0</data>
+      <data key="d9">Rachel DePalma is associated with MTS, indicating a relationship that encompasses ownership and operational responsibilities. The nature of this association includes various aspects such as ownership, modifications to ownership, and the operational activities conducted by MTS. This comprehensive relationship highlights Rachel DePalma's involvement in the management and oversight of MTS, reflecting her significant role within the organization.</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145,a02ba061dc95d27660cc631d66398d3f,bf7dd12ddb2c91e697cf05d4f3cb7e09,c010e318bffbec176b63755dbcb32e9b,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">bef16fb5fd7344cca5e295b13ef3e0cd</data>
+      <data key="d12">2</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="LEGAL DOCUMENTATION">
+      <data key="d8">1.0</data>
+      <data key="d9">has</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">bb9e01bc171d4326a29afda59ece8d17</data>
+      <data key="d12">3</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="WEBSITE">
+      <data key="d8">1.0</data>
+      <data key="d9">owns</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">3c063eea52e94164b70c99431ea30bae</data>
+      <data key="d12">4</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="ANONYMOUS REPORTING PORTAL">
+      <data key="d8">1.0</data>
+      <data key="d9">provides</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">252cc8452bfc4c2aa58cab68d8b61879</data>
+      <data key="d12">5</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="DEFENDANT KERNS">
+      <data key="d8">2.0</data>
+      <data key="d9">Rachel DePalma and Defendant Kerns are involved in a situation characterized by a communication relationship that has been marked by defamatory conduct. This relationship suggests that there have been interactions between the two parties that may have led to the dissemination of harmful or false statements about one another. The nature of their communication has likely contributed to the ongoing issues surrounding the allegations of defamation, indicating a complex dynamic that warrants further examination.</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">7e2c84548fb94ee395ba8588d8f2a006</data>
+      <data key="d12">6</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="DEFENDANT KORSLUND">
+      <data key="d8">2.0</data>
+      <data key="d9">Rachel DePalma and Defendant Korslund are involved in a complex communication relationship characterized by allegations of defamatory conduct. This relationship has been marked by interactions that have led to claims of damaging statements made by one party against the other. The nature of their communication has raised concerns regarding the potential impact of these statements on their reputations and the legal implications that may arise from such conduct.</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">f034618dde7948beb6dab30176d0fc87</data>
+      <data key="d12">7</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="SECURE WEBSITE">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">5c41f96be13e49dba649454297834546</data>
+      <data key="d12">8</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="LEGAL ACCREDITATION">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">7ea4afbf8a264f29af29950ce98105ba</data>
+      <data key="d12">9</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="ABUSE SURVIVORS">
+      <data key="d8">2.0</data>
+      <data key="d9">Rachel DePalma is associated with a group known as Abuse Survivors. This association focuses on supporting individuals who have experienced abuse, providing them with resources and a community for healing and empowerment. Rachel DePalma plays a significant role within this organization, contributing to its mission of advocating for the rights and well-being of abuse survivors.</data>
+      <data key="d10">77ba529fd57de0482adbb1545bd0f2ce,7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">91ff849d12b24574b0691dbddf44968b</data>
+      <data key="d12">10</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="DOMESTIC VIOLENCE">
+      <data key="d8">1.0</data>
+      <data key="d9">ASSOCIATION</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">d73c1f2fb3094d8dace42ad2a76e9a52</data>
+      <data key="d12">11</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="KORSLUND">
+      <data key="d8">3.0</data>
+      <data key="d9">Rachel DePalma and Korslund are involved in a complex communication relationship that has been characterized by various interactions and exchanges. This relationship has come under scrutiny due to allegations of defamation, suggesting that statements made within this context may have harmed the reputation of one or both parties. The nature of their communication has raised concerns, indicating that it may not only be a simple exchange of information but also involves elements that could lead to legal implications. Overall, the dynamics between Rachel DePalma and Korslund highlight the significance of communication in their interactions, particularly in light of the defamation claims.</data>
+      <data key="d10">77ba529fd57de0482adbb1545bd0f2ce,a02ba061dc95d27660cc631d66398d3f,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">cdc8901e668749889bd49bebdc4ff1f6</data>
+      <data key="d12">12</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="MARK BELMESSIERI">
+      <data key="d8">3.0</data>
+      <data key="d9">Rachel DePalma and Mark Belmessieri are associated as owners in a business context. Their relationship involves financial transactions, indicating a partnership or joint ownership in a venture. The details suggest that both individuals play significant roles in the management and financial dealings of the entity they are associated with.</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">36084a9fab53433493f079e97e68bf65</data>
+      <data key="d12">13</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="RESTRAINING ORDER">
+      <data key="d8">2.0</data>
+      <data key="d9">Rachel DePalma is associated with a restraining order that has been characterized by a false claim. The context surrounding this restraining order suggests issues related to ownership or association, indicating that there may be disputes or misunderstandings regarding the relationships or circumstances that led to the issuance of the order.</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">eebcc7ec8e3e4df7aea83659bbdc2199</data>
+      <data key="d12">14</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="TEXT CONVERSATION">
+      <data key="d8">1.0</data>
+      <data key="d9">DISCUSSES</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d11">ceadf262ef834e9ab146b20650912cae</data>
+      <data key="d12">15</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="SAMANTHA KERNS">
+      <data key="d8">4.0</data>
+      <data key="d9">Rachel DePalma and Samantha Kerns are involved in a communication relationship characterized by causal interactions. Their relationship is marked by discussions that facilitate the exchange of ideas and information between them. This dynamic suggests a collaborative environment where both individuals engage in meaningful dialogue, contributing to their mutual understanding and connection.</data>
+      <data key="d10">249459e607d2c0a0757cb1c3ca35a04e,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">7f65feab75424b53b24470d305ba331a</data>
+      <data key="d12">16</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="TRACY KORSLUND">
+      <data key="d8">4.0</data>
+      <data key="d9">Rachel DePalma and Tracy Korslund are involved in a communication relationship characterized by causal interactions. Their relationship is marked by discussions that facilitate the exchange of ideas and information, highlighting the importance of effective communication between them. This dynamic suggests a collaborative environment where both individuals engage in meaningful dialogue, contributing to their mutual understanding and connection.</data>
+      <data key="d10">249459e607d2c0a0757cb1c3ca35a04e,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">fd9cb733b28d420cb5cef01e545a132c</data>
+      <data key="d12">17</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="LAURINDA KIRK">
+      <data key="d8">4.0</data>
+      <data key="d9">Rachel DePalma and Laurinda Kirk are involved in a communication relationship characterized by causal interactions. Their relationship is marked by discussions that facilitate the exchange of ideas and information between them. This dynamic suggests a collaborative environment where both individuals engage in meaningful dialogue, contributing to their mutual understanding and connection.</data>
+      <data key="d10">249459e607d2c0a0757cb1c3ca35a04e,a02ba061dc95d27660cc631d66398d3f,a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">0fbcca3f17c649a08aea64b5a7d9ef36</data>
+      <data key="d12">18</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="KORSUND'S VIDEO">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIPS</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">482027a59f32484c9c44fd700615c1b6</data>
+      <data key="d12">19</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="DOMESTIC VIOLENCE SURVIVORS">
+      <data key="d8">3.0</data>
+      <data key="d9">Rachel DePalma is associated with the topic of domestic violence survivors, particularly in the context of causal relationships and ownership/association. Her work or involvement highlights the intricate connections between various factors that contribute to domestic violence, as well as the implications of ownership and association in the lives of survivors. This suggests that Rachel DePalma plays a role in understanding and addressing the complexities surrounding domestic violence, focusing on how these relationships impact the experiences and recovery of survivors.</data>
+      <data key="d10">249459e607d2c0a0757cb1c3ca35a04e,a815d00251c088d676e123cc67e599f7,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">de837ff3d626451282ff6ac77a82216d</data>
+      <data key="d12">20</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="ANONYMOUS PORTAL">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">460295fed3ae4cd39f9f274cec9c2506</data>
+      <data key="d12">21</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="COMPLAINT">
+      <data key="d8">2.0</data>
+      <data key="d9">Rachel DePalma is associated with a complaint that involves causal relationships and ownership or association. The details suggest that there are specific connections between the actions or events leading to the complaint and the parties involved. Rachel DePalma's role in this context may pertain to her ownership or association with the matters at hand, indicating her potential responsibility or involvement in the circumstances surrounding the complaint.</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">553b285bba60460ab1ed8341ae61282b</data>
+      <data key="d12">22</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="KIRK">
+      <data key="d8">3.0</data>
+      <data key="d9">Rachel DePalma and Kirk are involved in a communication relationship that has been characterized by accusations. This dynamic suggests that their interactions may be strained or contentious, potentially leading to misunderstandings or conflicts. The nature of their communication indicates that it is not solely positive, as the presence of accusations implies a level of discord or tension between them. Overall, their relationship is marked by complex communication patterns that may require resolution or improvement to foster a more constructive interaction.</data>
+      <data key="d10">77ba529fd57de0482adbb1545bd0f2ce,bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">cec95bf17e7e4c939b56c9c6f402a29f</data>
+      <data key="d12">23</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="KORSUND">
+      <data key="d8">1.0</data>
+      <data key="d9">ACCUSATION</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">599164aead034bc19446efacc77554d2</data>
+      <data key="d12">24</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="DOMESTIC ABUSE SURVIVORS">
+      <data key="d8">1.0</data>
+      <data key="d9">ACCUSATION</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">bbf148ae4d48422f8fdef754cfa2b9e4</data>
+      <data key="d12">25</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="ANONYMOUS">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">de61b2670999433f807a6a1dc2b81e43</data>
+      <data key="d12">26</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="NOPEACENOQUIET.ORG">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d11">3e95dacfe57b4d57b5da4310ef2e157f</data>
+      <data key="d12">27</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="DONATIONS">
+      <data key="d8">1.0</data>
+      <data key="d9">Financial Transactions</data>
+      <data key="d10">77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d11">1f1545308e9347af91fd03b94aadc21f</data>
+      <data key="d12">28</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="DOMESTIC ABUSE SUPPORT COMMUNITY">
+      <data key="d8">71.0</data>
+      <data key="d9">Rachel DePalma is associated with the Domestic Abuse Support Community. However, her ownership has been linked to a significant lowering of the community's reputation, although the overall impact on her reputation is described as insignificant. This suggests that while the Domestic Abuse Support Community may be experiencing challenges related to its public perception, Rachel DePalma's personal reputation remains largely unaffected.</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69,249459e607d2c0a0757cb1c3ca35a04e</data>
+      <data key="d11">6ea81acaf232485e94fff638e03336e1</data>
+      <data key="d12">29</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="INJURY TO HER REPUTATION">
+      <data key="d8">1.0</data>
+      <data key="d9">experiences</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d11">d136b08d586d488f9e4188b524c85a29</data>
+      <data key="d12">30</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="SHAME">
+      <data key="d8">1.0</data>
+      <data key="d9">experiences</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d11">cccfa151fedc4b218a8d96adc7dceabe</data>
+      <data key="d12">31</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="MORTIFICATION">
+      <data key="d8">1.0</data>
+      <data key="d9">experiences</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d11">ce54725672a74ebcabe6127577dacb2b</data>
+      <data key="d12">32</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="MENTAL ANGUISH">
+      <data key="d8">1.0</data>
+      <data key="d9">experiences</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d11">ea2b28ca1a974ffab4517811dc1d1e5c</data>
+      <data key="d12">33</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="INJURY TO HER FEELINGS">
+      <data key="d8">1.0</data>
+      <data key="d9">experiences</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d11">aff21f1da1654e7babdcf3fb0e4a75fc</data>
+      <data key="d12">34</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="RACHEL DEPALMA" target="INDIVIDUALS">
+      <data key="d8">71.0</data>
+      <data key="d9">questionsquestioned byoutsidequestioned aboutcausesexperienceswithinassociated with</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d11">dc2cc9016e3f49dbac7232f05cce794d</data>
+      <data key="d12">35</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="IP ADDRESS" target="DEFENDANT KORSLUND">
+      <data key="d8">1.0</data>
+      <data key="d9">associated with</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">6ea0cef05f694dcea455478f40674e45</data>
+      <data key="d12">36</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="IP ADDRESS" target="KORSUND">
+      <data key="d8">1.0</data>
+      <data key="d9">ACCUSATION</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">7ab5d53a872f4dfc98f3d386879f3c75</data>
+      <data key="d12">37</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="TIKTOK">
+      <data key="d8">2.0</data>
+      <data key="d9">Defendant Korslund is associated with TikTok, having published a video that involves software interactions. This indicates that Korslund's content on the platform engages with or demonstrates the functionalities of software, showcasing a connection between the defendant and the digital landscape of TikTok.</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">af1d0fec22114a3398b8016f5225f9ed</data>
+      <data key="d12">38</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="ACCOUNT @NARCTOK_ROYALTY">
+      <data key="d8">1.0</data>
+      <data key="d9">ASSOCIATED WITH</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">b07a7f088364459098cd8511ff27a4c8</data>
+      <data key="d12">39</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="FALSE LIGHT">
+      <data key="d8">1.0</data>
+      <data key="d9">CAUSAL RELATIONSHIP</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">8870cf2b5df64d2cab5820f67e29b9f1</data>
+      <data key="d12">40</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="TIKTOK USERS">
+      <data key="d8">1.0</data>
+      <data key="d9">ENCOURAGED</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">cd130938a2844050be991af70baf5ee0</data>
+      <data key="d12">41</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="FAKE COMPLAINTS">
+      <data key="d8">1.0</data>
+      <data key="d9">CAUSAL RELATIONSHIP</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">43544b99c3b04b059546198a0ae6366d</data>
+      <data key="d12">42</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="DEFENDANT KERNS">
+      <data key="d8">1.0</data>
+      <data key="d9">SOCIAL CONNECTIONS</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b</data>
+      <data key="d11">a671bf7fea2f4514b6e96ba99127fafd</data>
+      <data key="d12">43</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="NPEACENOQUIET.ORG">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b</data>
+      <data key="d11">525f41ea20274a05af4e52b625b473f3</data>
+      <data key="d12">44</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="MTS">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b</data>
+      <data key="d11">071a416efbec4f0886c19ac68f6d43cb</data>
+      <data key="d12">45</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KORSLUND" target="TRACY KORSLUND">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b</data>
+      <data key="d11">6d8473ef3b1042bf87178a611e3dbcc6</data>
+      <data key="d12">46</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="ACCOUNT @WHATDOESITMATTER">
+      <data key="d8">2.0</data>
+      <data key="d9">DEFENDANT KERNS is associated with the account @WHATDOESITMATTER, which uses this platform for its activities.</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">30c9641543c24773938bd8ec57ea98ab</data>
+      <data key="d12">47</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="VIDEO">
+      <data key="d8">1.0</data>
+      <data key="d9">publishes</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">18b839da898e4026b81727d759d95c6a</data>
+      <data key="d12">48</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="TIKTOK">
+      <data key="d8">2.0</data>
+      <data key="d9">DEFENDANT KERNS is associated with TIKTOK, where he publishes videos.</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145,c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">eeef6ae5c464400c8755900b4f1ac37a</data>
+      <data key="d12">49</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="ABUSE SURVIVORS">
+      <data key="d8">1.0</data>
+      <data key="d9">defames</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">422433aa45804c7ebb973b2fafce5da6</data>
+      <data key="d12">50</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="SAMANTHA KERNS">
+      <data key="d8">2.0</data>
+      <data key="d9">The summary pertains to the entities DEFENDANT KERNS and SAMANTHA KERNS, who are associated with allegations of harassing conduct. The descriptions indicate that there is a connection between the two individuals, suggesting that their ownership or association may play a role in the context of the alleged harassment. The nature of the harassing conduct has not been specified, but it implies a pattern of behavior that could be linked to their relationship or shared interests. Overall, the information suggests a complex dynamic involving both DEFENDANT KERNS and SAMANTHA KERNS in the context of the allegations.</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">86505bca739d4bccaaa1a8e0f3baffdc</data>
+      <data key="d12">51</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="TRACY KORSLUND">
+      <data key="d8">1.0</data>
+      <data key="d9">HARASSING CONDUCT</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">1af9faf341e14a5bbf4ddc9080e8dc0b</data>
+      <data key="d12">52</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="LAURINDA KIRK">
+      <data key="d8">2.0</data>
+      <data key="d9">Defendant Kerns is involved in a situation characterized by harassing conduct, which has raised concerns regarding the nature of their interactions. Additionally, there are social connections that may play a role in the dynamics of this case, particularly in relation to Laurinda Kirk. The interplay between Kerns' behavior and the social relationships surrounding Kirk is significant, as it may influence the context and implications of the alleged harassment.</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b,7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">353d91abc68648639d65a549e59b5cf3</data>
+      <data key="d12">53</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="FALSE LIGHT">
+      <data key="d8">1.0</data>
+      <data key="d9">CAUSAL RELATIONSHIP</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">7ce637e4f35b42e3a9f8272cab69cd22</data>
+      <data key="d12">54</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="TIKTOK USERS">
+      <data key="d8">1.0</data>
+      <data key="d9">ENCOURAGED</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">4d999d7744b04a998475f8f8531589f0</data>
+      <data key="d12">55</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEFENDANT KERNS" target="FAKE COMPLAINTS">
+      <data key="d8">1.0</data>
+      <data key="d9">CAUSAL RELATIONSHIP</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">9a6f414210e14841a5b0e661aedc898d</data>
+      <data key="d12">56</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="DATE: NOVEMBER 27, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">created on</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">db541b7260974db8bac94e953009f60e</data>
+      <data key="d12">57</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="DATE: NOVEMBER 29, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">created on</data>
+      <data key="d10">c010e318bffbec176b63755dbcb32e9b</data>
+      <data key="d11">f2ff8044718648e18acef16dd9a65436</data>
+      <data key="d12">58</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="DELETED VIDEO">
+      <data key="d8">1.0</data>
+      <data key="d9">MODIFICATION</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">00d785e7d76b47ec81b508e768d40584</data>
+      <data key="d12">59</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="TEXT OVER VIDEO">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">87915637da3e474c9349bd0ae604bd95</data>
+      <data key="d12">60</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="DATE NOVEMBER 29, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">PUBLISHED ON</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">8f1eba29f39e411188200bf0d14628ec</data>
+      <data key="d12">61</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="DATE NOVEMBER 27, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">PUBLISHED ON</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">7282c73622b8408e97289d959faff483</data>
+      <data key="d12">62</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="URL">
+      <data key="d8">2.0</data>
+      <data key="d9">The entity "VIDEO" is associated with the concept of "DATA FLOW," which refers to the movement and processing of data related to video content. Additionally, the entity "URL" is linked to "LINKS_TO," indicating that URLs serve as references or connections to specific online resources, including videos. Together, these entities highlight the interconnected nature of video content and the URLs that facilitate access to it, emphasizing the importance of data flow in the distribution and retrieval of video information.</data>
+      <data key="d10">51bb191c26a4a6c71609e7b8172be62b,a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d11">3deb220d31f74103aa44870a36a63220</data>
+      <data key="d12">63</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="KORSLUND">
+      <data key="d8">1.0</data>
+      <data key="d9">CREATES</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d11">af7a1584dd15492cb9a4940e285f57fc</data>
+      <data key="d12">64</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="TIKTOK">
+      <data key="d8">1.0</data>
+      <data key="d9">HOSTED_ON</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d11">6e8d9029ce4e4ea182367173ab2c7bbf</data>
+      <data key="d12">65</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="DATE">
+      <data key="d8">1.0</data>
+      <data key="d9">PUBLISHED_ON</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d11">cbf232211e7d4eb6abdbe182f71c2cf0</data>
+      <data key="d12">66</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="KORSUND">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">bb0cff774a4440b289cc6f3b929fe13c</data>
+      <data key="d12">67</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="VIDEO" target="KIRK">
+      <data key="d8">2.0</data>
+      <data key="d9">The entity "VIDEO" is associated with the concept of "Content Relationships," which refers to the various connections and interactions that exist between different pieces of content. This encompasses how videos relate to one another, how they are categorized, and how they can be linked through themes, topics, or shared elements. The entity "KIRK" may also be involved in these content relationships, potentially as a creator, curator, or influencer within the video domain. Overall, the relationship between "VIDEO" and "KIRK" highlights the importance of understanding how content is interconnected in the digital landscape.</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec,77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d11">ce55841ebfdd47008bab8c258f10372e</data>
+      <data key="d12">68</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="MTS" target="ANONYMOUS REPORTING PORTAL">
+      <data key="d8">1.0</data>
+      <data key="d9">ASSOCIATION</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">6090e736374d45fd84f0e4610a314f8f</data>
+      <data key="d12">69</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="MTS" target="KIRK">
+      <data key="d8">1.0</data>
+      <data key="d9">Causal Relationships</data>
+      <data key="d10">77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d11">0e8d921ccd8d4a8594b65b7fd19f7120</data>
+      <data key="d12">70</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="MTS" target="SAMANTHA KERNS">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">249459e607d2c0a0757cb1c3ca35a04e</data>
+      <data key="d11">59c726a8792d443e84ab052cb7942b4a</data>
+      <data key="d12">71</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="MTS" target="TRACY KORSLUND">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">249459e607d2c0a0757cb1c3ca35a04e</data>
+      <data key="d11">4f2c665decf242b0bfcaf7350b0e02ed</data>
+      <data key="d12">72</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="MTS" target="LAURINDA KIRK">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">249459e607d2c0a0757cb1c3ca35a04e</data>
+      <data key="d11">66cdf168f36d4a57a505028c97dc06e0</data>
+      <data key="d12">73</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="TIKTOK" target="URL">
+      <data key="d8">1.0</data>
+      <data key="d9">DATA FLOW</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">38f51478f41f48db9bee570859b6f43e</data>
+      <data key="d12">74</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="TIKTOK" target="KIRK">
+      <data key="d8">4.0</data>
+      <data key="d9">TikTok and Kirk are associated with software interactions, indicating a focus on the ways in which these entities engage with or utilize software technologies. This encompasses various aspects of their operations, including user engagement, content creation, and platform functionality. The term "software interactions" suggests a dynamic relationship between TikTok and Kirk, highlighting their reliance on software systems to facilitate communication, entertainment, and user experience.</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec,77ba529fd57de0482adbb1545bd0f2ce,bf7dd12ddb2c91e697cf05d4f3cb7e09,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">896d2a51e8de47de85ba8ced108c3d53</data>
+      <data key="d12">75</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="TIKTOK" target="KORSUND">
+      <data key="d8">1.0</data>
+      <data key="d9">SOFTWARE INTERACTIONS</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">14555b518e954637b83aa762dc03164e</data>
+      <data key="d12">76</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="TIKTOK" target="KORSLUND">
+      <data key="d8">1.0</data>
+      <data key="d9">SOCIAL_MEDIA_ACCOUNTS</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">b1f6164116d44fe8b8f135d7f65b9e58</data>
+      <data key="d12">77</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="TIKTOK" target="KERNS">
+      <data key="d8">1.0</data>
+      <data key="d9">SOCIAL_MEDIA_ACCOUNTS</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">c8b2408617804483b620e1a6691ac90d</data>
+      <data key="d12">78</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="ABUSE SURVIVORS" target="KIRK">
+      <data key="d8">1.0</data>
+      <data key="d9">Causal RELATIONSHIP</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d11">a5e0d1644eb547ba9a5c3211aac4631a</data>
+      <data key="d12">79</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="NOPEACENOQUIET.ORG" target="FAKE COMPLAINTS">
+      <data key="d8">1.0</data>
+      <data key="d9">PUBLISHED</data>
+      <data key="d10">7af44641b2435eed1fae8fb11ea1f145</data>
+      <data key="d11">5a28b94bc63b44edb30c54748fd14f15</data>
+      <data key="d12">80</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="NOPEACENOQUIET.ORG" target="KIRK">
+      <data key="d8">1.0</data>
+      <data key="d9">ACCUSATION</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">f97011b2a99d44648e18d517e1eae15c</data>
+      <data key="d12">81</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="URL" target="KIRK">
+      <data key="d8">2.0</data>
+      <data key="d9">KIRK is associated with the concept of "Data Flow," which refers to the movement and processing of data within a system or between systems. This encompasses the various pathways through which data is transmitted, transformed, and utilized, highlighting the importance of efficient data management and integration. The term "DATA FLOW" emphasizes the dynamic nature of data as it travels through different stages, ensuring that information is accessible and actionable.</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec,77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d11">35489ca6a63b47d6a8913cf333818bc1</data>
+      <data key="d12">82</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="KIRK">
+      <data key="d8">2.0</data>
+      <data key="d9">KORSLUND and KIRK are entities that emphasize the importance of communication and social connections. They are recognized for fostering relationships and facilitating interactions among individuals. Through effective communication, both KORSLUND and KIRK aim to strengthen social ties, enhance collaboration, and promote a sense of community. Their focus on these aspects highlights the value they place on interpersonal relationships and the role of communication in building and maintaining social networks.</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5,77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d11">5d3344f45e654d2c808481672f2f08dd</data>
+      <data key="d12">83</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="@NARCTOK_ROYALTY">
+      <data key="d8">2.0</data>
+      <data key="d9">SOCIAL CONNECTIONSDATA FLOW</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">6fb57f83baec45c9b30490ee991f433f</data>
+      <data key="d12">84</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="@THE.SILLYEST.HO">
+      <data key="d8">2.0</data>
+      <data key="d9">SOCIAL CONNECTIONSDATA FLOW</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">68762e6f0d1c41cd857c6b964a8e76c3</data>
+      <data key="d12">85</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="@JADALOUS">
+      <data key="d8">2.0</data>
+      <data key="d9">SOCIAL CONNECTIONSDATA FLOW</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">70634e10a5e845aa8c6a32fe7e8eb2b2</data>
+      <data key="d12">86</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="FALSE INFORMATION">
+      <data key="d8">1.0</data>
+      <data key="d9">CAUSAL RELATIONSHIP</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">04085f7cf46544b79597fc49286ff84d</data>
+      <data key="d12">87</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="DECEMBER 9, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">TEMPORAL RELATIONSHIP</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">d203efdbfb2f4b2a899abfb31cf72e82</data>
+      <data key="d12">88</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="DEPALMA">
+      <data key="d8">1.0</data>
+      <data key="d9">FALSE_INFORMATION</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">6731a665561840c2898ce8c9788e4c88</data>
+      <data key="d12">89</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="LAWSUITS">
+      <data key="d8">1.0</data>
+      <data key="d9">ASSOCIATION</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">4026806fa92f4e849a59a7f5c9a45c79</data>
+      <data key="d12">90</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSLUND" target="FALSE_INFORMATION">
+      <data key="d8">1.0</data>
+      <data key="d9">SPREAD</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">68e0c60d2e8845d89d9d0ad397833648</data>
+      <data key="d12">91</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="MARK BELMESSIERI" target="CASE SUMMARY">
+      <data key="d8">1.0</data>
+      <data key="d9">RELATED_TO</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d11">101572f552b54e529fe7765c05168981</data>
+      <data key="d12">92</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="MARK BELMESSIERI" target="DIANE">
+      <data key="d8">1.0</data>
+      <data key="d9">COMMUNICATION RELATIONSHIPS</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">60c58026b2764b40adffca6eaa31d6d9</data>
+      <data key="d12">93</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="CASE SUMMARY" target="AMENDED COMPLAINT">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTAINS</data>
+      <data key="d10">a02ba061dc95d27660cc631d66398d3f</data>
+      <data key="d11">ad1595a78935472999444c9330e7730e</data>
+      <data key="d12">94</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND'S VIDEO" target="@THE.SILLIEST.HO">
+      <data key="d8">1.0</data>
+      <data key="d9">SOCIAL CONNECTIONS</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">735d19aea0744b2295556841c5c4c3fd</data>
+      <data key="d12">95</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND'S VIDEO" target="@NARCTOCK_ROYALTY">
+      <data key="d8">1.0</data>
+      <data key="d9">SOCIAL CONNECTIONS</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">c725babdb14a485582f8fbdf95429030</data>
+      <data key="d12">96</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND'S VIDEO" target="DECEMBER 4, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">TEMPORAL RELATIONSHIPS</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">a0047221896d418d849847d422fa4bb8</data>
+      <data key="d12">97</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND'S VIDEO" target="DECEMBER 8, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">TEMPORAL RELATIONSHIPS</data>
+      <data key="d10">a815d00251c088d676e123cc67e599f7</data>
+      <data key="d11">98fc2ee593184c5a839454db4eec7013</data>
+      <data key="d12">98</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DECEMBER 4, 2021" target="KORSUND">
+      <data key="d8">1.0</data>
+      <data key="d9">TEMPORAL RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">80020a1da63042459e00266b2a605452</data>
+      <data key="d12">99</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DECEMBER 8, 2021" target="KORSUND">
+      <data key="d8">1.0</data>
+      <data key="d9">TEMPORAL RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">31a7e680c4d54101afe4c8d52d246913</data>
+      <data key="d12">100</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="NOVEMBER 30, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">TEMPORAL RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">351abba16e5c448994c6daf48121b14d</data>
+      <data key="d12">101</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="FINANCIAL TRANSACTIONS">
+      <data key="d8">1.0</data>
+      <data key="d9">ACCUSATION</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">50ea7d3b69614bcdbfbff7ddbfbf3d34</data>
+      <data key="d12">102</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="WHOLSEOMEHEALINGATL">
+      <data key="d8">2.0</data>
+      <data key="d9">KIRK is associated with WHOLSEOMEHEALINGATL, indicating a relationship of ownership or affiliation between the two entities.</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec,77ba529fd57de0482adbb1545bd0f2ce</data>
+      <data key="d11">004f40a5aeca48a1879db728eb12bcba</data>
+      <data key="d12">103</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="NOQUIETNOPEACE.ORG">
+      <data key="d8">5.0</data>
+      <data key="d9">KIRK is associated with the organization NOQUIETNOPEACE.ORG. This relationship encompasses various aspects, including ownership and association details, as well as data flow related to these entities. Additionally, KIRK and NOQUIETNOPEACE.ORG maintain a presence on social media platforms, further enhancing their visibility and engagement with the community. The comprehensive understanding of their ownership and association dynamics, along with their social media activities, highlights the interconnectedness of KIRK and NOQUIETNOPEACE.ORG in their mission and outreach efforts.</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec,67833986bc48d0231a96f171d7b372f5,77ba529fd57de0482adbb1545bd0f2ce,c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">4465efb7f6ed4dedad72a658184addd2</data>
+      <data key="d12">104</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="FORM">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d11">b0dd60e11dad4ff782623acf039b3948</data>
+      <data key="d12">105</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="SMEAR CAMPAIGN MISCONDUCT TICKETING SYSTEM">
+      <data key="d8">1.0</data>
+      <data key="d9">OWNERSHIP/ASSOCIATION</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d11">db8c43fa4df947b09e5754d3b1393ead</data>
+      <data key="d12">106</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="SOCIAL MEDIA">
+      <data key="d8">1.0</data>
+      <data key="d9">Causal RELATIONSHIP</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d11">5dabc4cd05da425cb194a04482bf0c29</data>
+      <data key="d12">107</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="VPN">
+      <data key="d8">1.0</data>
+      <data key="d9">Causal RELATIONSHIP</data>
+      <data key="d10">3fb0a3a81592938a6462351bcb3203ec</data>
+      <data key="d11">9d08f285a7be4c79b8f359c51d51db37</data>
+      <data key="d12">108</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="@WHOLESOMEHEALINGATL">
+      <data key="d8">2.0</data>
+      <data key="d9">SOCIAL CONNECTIONSDATA FLOW</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">adffed660d154b519c1817e514e83096</data>
+      <data key="d12">109</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="FALSE INFORMATION">
+      <data key="d8">1.0</data>
+      <data key="d9">CAUSAL RELATIONSHIP</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">b7e9c9ef572c445a9574ca571e41fb96</data>
+      <data key="d12">110</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="DECEMBER 9, 2021">
+      <data key="d8">1.0</data>
+      <data key="d9">TEMPORAL RELATIONSHIP</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">dcb9f281cd6248c699e0ebb285a42a5e</data>
+      <data key="d12">111</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="INSTAGRAM">
+      <data key="d8">1.0</data>
+      <data key="d9">SOFTWARE INTERACTIONS</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">072cdee531b74513984f49d99a8d64a0</data>
+      <data key="d12">112</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="DEPALMA">
+      <data key="d8">1.0</data>
+      <data key="d9">FALSE_INFORMATION</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">5ae335d9210a45fda3f92a9a028d6d9b</data>
+      <data key="d12">113</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="LAWSUITS">
+      <data key="d8">1.0</data>
+      <data key="d9">ASSOCIATION</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">5ac60a941a5b4934bdc43d2f87de601c</data>
+      <data key="d12">114</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KIRK" target="FALSE_INFORMATION">
+      <data key="d8">1.0</data>
+      <data key="d9">SPREAD</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">d405c3154d0e48ce96fad4c28fe20590</data>
+      <data key="d12">115</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND" target="VIDEO 1">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">7923d8521c744bd9aab131c1aea91ffd</data>
+      <data key="d12">116</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND" target="VIDEO 2">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">5bd156c87ec44e19ae6f8f62e6e50b9d</data>
+      <data key="d12">117</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND" target="VIDEO 3">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">c1a146d7fb16429ea6d0aa2a55ee597f</data>
+      <data key="d12">118</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND" target="VIDEO 4">
+      <data key="d8">1.0</data>
+      <data key="d9">CONTENT RELATIONSHIP</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">ede9350632084da5b0b577ff799ab14b</data>
+      <data key="d12">119</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KORSUND" target="FINANCIAL TRANSACTIONS">
+      <data key="d8">1.0</data>
+      <data key="d9">ACCUSATION</data>
+      <data key="d10">bf7dd12ddb2c91e697cf05d4f3cb7e09</data>
+      <data key="d11">ed559fb4ebde45518849ec803b350fa3</data>
+      <data key="d12">120</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KERNS" target="@WHATDOESITMATTER">
+      <data key="d8">1.0</data>
+      <data key="d9">SOCIAL CONNECTIONS</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">f422035f8b78417f98e4d116971cf9f3</data>
+      <data key="d12">121</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KERNS" target="FALSE INFORMATION">
+      <data key="d8">1.0</data>
+      <data key="d9">CAUSAL RELATIONSHIP</data>
+      <data key="d10">c075978d162a71aaa680d6a6cb880daf</data>
+      <data key="d11">c79d686eba044c5586c706cdc096817d</data>
+      <data key="d12">122</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KERNS" target="DEPALMA">
+      <data key="d8">1.0</data>
+      <data key="d9">FALSE_INFORMATION</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">0f70db1e598d463fbbcdd1e288bd9490</data>
+      <data key="d12">123</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KERNS" target="LAWSUITS">
+      <data key="d8">1.0</data>
+      <data key="d9">ASSOCIATION</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">b35c3d1a7daa4924b6bdb58bc69c354d</data>
+      <data key="d12">124</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="KERNS" target="FALSE_INFORMATION">
+      <data key="d8">1.0</data>
+      <data key="d9">SPREAD</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">a97e2ecd870944cfbe71c79bc0fcc752</data>
+      <data key="d12">125</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEPALMA" target="REPUTATION">
+      <data key="d8">1.0</data>
+      <data key="d9">INJURY</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">3e1b063bbfa9423d84e50311296d2f3c</data>
+      <data key="d12">126</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEPALMA" target="DOMESTIC_VIOLENCE_SURVIVORS">
+      <data key="d8">1.0</data>
+      <data key="d9">INTERFERENCE</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">9a8ce816ee954bdabd01ea2081538009</data>
+      <data key="d12">127</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEPALMA" target="MENTAL_ANGUISH">
+      <data key="d8">1.0</data>
+      <data key="d9">INJURY</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">09f18f81442d4d6d93a90f0fac683f9b</data>
+      <data key="d12">128</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEPALMA" target="TRADE_AND_PROFESSION">
+      <data key="d8">1.0</data>
+      <data key="d9">INJURY</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">e02be3e37ca0454883a4c1fd859c24bb</data>
+      <data key="d12">129</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DEPALMA" target="DOMESTIC_ABUSE_SUPPORT_COMMUNITY">
+      <data key="d8">1.0</data>
+      <data key="d9">REPUTATION</data>
+      <data key="d10">67833986bc48d0231a96f171d7b372f5</data>
+      <data key="d11">6e0c81bef5364c988b21bf9b709d9861</data>
+      <data key="d12">130</data>
+      <data key="d13">1</data>
+    </edge>
+    <edge source="DOMESTIC ABUSE SUPPORT COMMUNITY" target="INDIVIDUALS">
+      <data key="d8">1.0</data>
+      <data key="d9">interacts with</data>
+      <data key="d10">135c328df7764dbaf37d33f3b148cc69</data>
+      <data key="d11">1dbc51475cb04dafa4a8833a8378635e</data>
+      <data key="d12">131</data>
+      <data key="d13">1</data>
+    </edge>
+  </graph>
+</graphml>
